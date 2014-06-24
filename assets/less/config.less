@@ -1,0 +1,42 @@
+/* variable */
+@body-fontface:'Raleway', sans-serif;
+@heading-fontface:'Montserrat', sans-serif;
+@layout-width: 980px;
+@black: #000;
+@white: #fff;
+@scheme: #F6BA70;
+@body-background: #fff;
+@grey: #ccc;
+@blue: #009eca;
+@green: #97c13f;
+@red: #e74c3c;
+@dark: #333;
+@light: #ddd;
+@orange:#f6ba70;
+@lightblue:#58c5c0;
+@darkblue:#42555c;
+@sub-menu-width:200px;
+@off-canvas-width:250px;
+.rounded (@radius:0px) {
+	-webkit-border-radius: @radius;
+ 	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+.transition (@transition: all 0.2s ease-in-out 0s)  {
+	-webkit-transition: @transition;
+	-moz-transition: @transition;
+	-o-transition: @transition;
+  -ms-transition: @transition;
+	transition: @transition;
+}
+.opacity(@opacity: 0.5) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+  @opperc: @opacity * 100;
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+  filter: ~"alpha(opacity=@{opperc})";
+}

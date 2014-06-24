@@ -1,0 +1,26 @@
+{
+  "name": "imperugo.portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:imperugo/imperugo.portfolio.git"
+  },
+  "keywords": [
+    "gaia"
+  ],
+  "author": "Ugo Lattanzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imperugo/imperugo.portfolio/issues"
+  },
+  "homepage": "https://github.com/imperugo/imperugo.portfolio",
+  "dependencies": {
+    "compression": "^1.0.8",
+    "express": "^4.4.4"
+  }
+}

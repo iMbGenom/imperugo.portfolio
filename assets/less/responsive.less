@@ -1,0 +1,309 @@
+/*============================================================ 
+                        CSS OVERVIEWS
+                1. Tablet
+                2. Mobile
+
+============================================================*/
+
+@import 'config.less';
+
+@media only screen and (max-width: 1024px) {
+	.line-wrap {
+		width: 100%;
+		padding: 0 20px;
+  	}
+  	#line-page-body {
+  		.line-portfolio {
+	  		#line-load-ajax {
+	  			margin-left: -20px;
+	  			margin-right: -20px;
+	  			padding-right: 20px;
+	  			padding-left: 20px;
+	  		}
+	  	}
+  	}
+}
+
+/* ============================================================ 
+    1. Tablet
+=============================================================*/
+@media only screen and (max-width: 768px) {
+	h1,h2,h3,h4,h5,h6 {
+		&.line-title-1 {
+			&:after,&:before {
+				display: none;
+			}
+		}
+	}
+	h1 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	.line-parallax {
+	    background-size: cover;
+	    background-attachment: scroll;
+	}
+	#line-content-top {
+		width: @off-canvas-width;
+		right: 0;
+		left: auto;
+		display: block;
+		overflow: auto;
+		height: 100%;
+		position: absolute;
+		.line-sidebar-top {
+			.line-column {
+				display: block;
+				width: 100%;
+				padding: 0 20px;
+				border: none;
+				float: none;
+				.widget {
+					margin-bottom: 50px;
+				}
+			}
+		}
+	}
+	#line-page-body {
+		.line-has-sidebar {
+			.line-page-content,
+			.line-page-sidebar {
+				width: 100%;
+				float: none;
+			}
+			&.line-sidebar-right,
+			&.line-sidebar-left {
+				.line-page-content,
+				.line-page-sidebar {
+					padding: 0;
+				}
+			}
+			.line-page-sidebar {
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+		}
+		.line-under-construction {
+			.line-countdown {
+				> div {
+		    		font-size: 36px;
+		    		padding: 0 20px;
+		    		&:after {
+		    			right: -7px;
+		    		} 	
+		    	}
+			}
+		}
+	}
+	.line-sticky {
+		&.visible {
+			position: static;
+			top:0px;
+		}
+	}
+}
+
+/* ============================================================ 
+    2. Mobile
+=============================================================*/
+@media only screen and (max-width: 568px) {
+	.none-in-mobile {
+		display: none;
+	}
+	#line-page-body {
+		.line-blog {
+			&.line-blog-medium {
+				.entry {
+					.line-entry-wrap,
+					.line-thumb {
+						width: 100%;
+						float: none;
+						padding: 0;
+					}
+					.line-thumb {
+						margin-bottom: 30px;
+					}
+				}
+			}
+		}
+		.line-under-construction {
+			.line-countdown {
+				> div {
+		    		font-size: 30px;
+		    		padding: 0 10px;
+		    		&:after {
+		    			display: none;
+		    		} 	
+		    	}
+			}
+		}
+	}
+  	.line-column {
+		float: none;
+		&.line1, &.line2, &.line3, &.line4, &.line5, &.line6, &.line7, &.line8, &.line9, &.line10, &.line11, &.line12 {
+	  		width: 100%;
+	  		margin-bottom: 20px;
+		}
+  	}
+
+  	/** Column **/
+  	.one-half, 
+  	.one-third, 
+  	.two-third, 
+  	.three-fourth, 
+  	.one-fourth {
+		float: none;
+		margin: 0;
+		margin-bottom: 40px;
+		width:100%;
+		&.line-has-border {
+			&:after {
+				display: none;
+			}
+		}
+  	}	
+  	[class*="line-col-"] {
+		article, li, .line-col {
+	  		width: 100%;
+		}
+  	}
+  	/** line-promobox **/
+  	.line-promobox {
+		&.has-button {
+			.line-promocontent {
+		  		margin: 0;
+			}
+	  	}
+		.line-promobutton {
+	  		.line-btn {
+				position: static;
+				margin: 20px 0 0 0;
+	  		}
+		}
+  	}
+
+  	/** tabs **/
+  	.line-tabs {
+  		.line-filter-tabs {
+  			border: none;
+  			li {
+  				float: none;
+  				a {
+  					display: block;
+  					width: 100%;
+  					border: 2px solid lighten(@grey, 10%);
+  					margin-bottom: 10px;
+  					padding-left: 15px;
+  					.rounded;
+  					&.selected {
+  						border: 2px solid @black;
+  						&:after {
+  							display: none;
+  						}
+  					}
+  				}
+  			}
+  		}
+  	}
+  	
+  	/** table **/
+  	table {
+		&.line-table {
+	  		display: block;
+	  		border: 2px solid lighten(@grey, 10%);
+	  		thead {
+				float: left;
+				display: block;
+				tr{
+		  			display: block;
+		  			&.header {
+						th {
+			  				display: block;
+						}
+		  			}
+				}
+	  		}
+	  		tbody {
+				display: block;
+				overflow-x: auto;
+				white-space: nowrap;
+				tr {
+		  			border-right: 1px solid lighten(@grey, 10%);
+		  			display: table-cell;
+		  			vertical-align: top;
+		  			&:last-child {
+						border-right: none;
+		  			}
+		  			td {
+						display: block;
+						&:last-child {
+			  				border-bottom: none;
+						}
+		  			}
+				}
+	  		}
+	  		&.line-style1 {
+				thead {
+		  			tr {
+						th {
+			  				background: lighten(@grey, 15%)
+						}
+		  			}
+				}
+	  		}
+	  		&.line-style2 {
+				tbody {
+		  			tr {
+						border-right: none;
+						&:nth-child(2n) {
+			  				background: @white;
+			  				td {
+								&:nth-child(2n) {
+				  					background: lighten(@grey, 15%);
+								}
+			  				}
+						}
+						&:nth-child(2n + 1) {
+			  				background: lighten(@grey, 15%);
+			  				td {
+								&:nth-child(2n) {
+				  					background: @white;
+								}
+			  				}
+						}
+		  			}
+				}
+	  		}
+		}
+  	}
+  	.line-pricing-table {
+   		.pricing-table-wrap {
+	  		display: block;
+	  		width: 100%;
+	  		margin-bottom: 20px;
+		}
+  	}
+  	/**Woo**/
+  	.woocommerce p.woocommerce-result-count, 
+  	.woocommerce-page p.woocommerce-result-count,
+  	.woocommerce .woocommerce-ordering, 
+  	.woocommerce-page .woocommerce-ordering {
+  		float: none;
+  		width: 100%;
+  		text-align: center;
+  	}
+  	.woocommerce div.product .images, 
+  	.woocommerce-page div.product .images,
+  	.woocommerce div.product .summary, 
+  	.woocommerce-page div.product .summary {
+  		width: 100%;
+  		padding: 10px 0;
+  		float: none;
+  		display: inline-block;
+  	}
+}

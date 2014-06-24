@@ -1,0 +1,269 @@
+/*============================================================ 
+                        CSS OVERVIEWS
+                1. Tablet
+                2. Mobile
+
+============================================================*/
+/* variable */
+@media only screen and (max-width: 1024px) {
+  .line-wrap {
+    width: 100%;
+    padding: 0 20px;
+  }
+  #line-page-body .line-portfolio #line-load-ajax {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+/* ============================================================ 
+    1. Tablet
+=============================================================*/
+@media only screen and (max-width: 768px) {
+  h1.line-title-1:after,
+  h2.line-title-1:after,
+  h3.line-title-1:after,
+  h4.line-title-1:after,
+  h5.line-title-1:after,
+  h6.line-title-1:after,
+  h1.line-title-1:before,
+  h2.line-title-1:before,
+  h3.line-title-1:before,
+  h4.line-title-1:before,
+  h5.line-title-1:before,
+  h6.line-title-1:before {
+    display: none;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  .line-parallax {
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  #line-content-top {
+    width: 250px;
+    right: 0;
+    left: auto;
+    display: block;
+    overflow: auto;
+    height: 100%;
+    position: absolute;
+  }
+  #line-content-top .line-sidebar-top .line-column {
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    border: none;
+    float: none;
+  }
+  #line-content-top .line-sidebar-top .line-column .widget {
+    margin-bottom: 50px;
+  }
+  #line-page-body .line-has-sidebar .line-page-content,
+  #line-page-body .line-has-sidebar .line-page-sidebar {
+    width: 100%;
+    float: none;
+  }
+  #line-page-body .line-has-sidebar.line-sidebar-right .line-page-content,
+  #line-page-body .line-has-sidebar.line-sidebar-left .line-page-content,
+  #line-page-body .line-has-sidebar.line-sidebar-right .line-page-sidebar,
+  #line-page-body .line-has-sidebar.line-sidebar-left .line-page-sidebar {
+    padding: 0;
+  }
+  #line-page-body .line-has-sidebar .line-page-sidebar {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #line-page-body .line-under-construction .line-countdown > div {
+    font-size: 36px;
+    padding: 0 20px;
+  }
+  #line-page-body .line-under-construction .line-countdown > div:after {
+    right: -7px;
+  }
+  .line-sticky.visible {
+    position: static;
+    top: 0px;
+  }
+}
+/* ============================================================ 
+    2. Mobile
+=============================================================*/
+@media only screen and (max-width: 568px) {
+  .none-in-mobile {
+    display: none;
+  }
+  #line-page-body .line-blog.line-blog-medium .entry .line-entry-wrap,
+  #line-page-body .line-blog.line-blog-medium .entry .line-thumb {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+  #line-page-body .line-blog.line-blog-medium .entry .line-thumb {
+    margin-bottom: 30px;
+  }
+  #line-page-body .line-under-construction .line-countdown > div {
+    font-size: 30px;
+    padding: 0 10px;
+  }
+  #line-page-body .line-under-construction .line-countdown > div:after {
+    display: none;
+  }
+  .line-column {
+    float: none;
+  }
+  .line-column.line1,
+  .line-column.line2,
+  .line-column.line3,
+  .line-column.line4,
+  .line-column.line5,
+  .line-column.line6,
+  .line-column.line7,
+  .line-column.line8,
+  .line-column.line9,
+  .line-column.line10,
+  .line-column.line11,
+  .line-column.line12 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /** Column **/
+  .one-half,
+  .one-third,
+  .two-third,
+  .three-fourth,
+  .one-fourth {
+    float: none;
+    margin: 0;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  .one-half.line-has-border:after,
+  .one-third.line-has-border:after,
+  .two-third.line-has-border:after,
+  .three-fourth.line-has-border:after,
+  .one-fourth.line-has-border:after {
+    display: none;
+  }
+  [class*="line-col-"] article,
+  [class*="line-col-"] li,
+  [class*="line-col-"] .line-col {
+    width: 100%;
+  }
+  /** line-promobox **/
+  .line-promobox.has-button .line-promocontent {
+    margin: 0;
+  }
+  .line-promobox .line-promobutton .line-btn {
+    position: static;
+    margin: 20px 0 0 0;
+  }
+  /** tabs **/
+  .line-tabs .line-filter-tabs {
+    border: none;
+  }
+  .line-tabs .line-filter-tabs li {
+    float: none;
+  }
+  .line-tabs .line-filter-tabs li a {
+    display: block;
+    width: 100%;
+    border: 2px solid #e6e6e6;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    border-radius: 0px;
+  }
+  .line-tabs .line-filter-tabs li a.selected {
+    border: 2px solid #000000;
+  }
+  .line-tabs .line-filter-tabs li a.selected:after {
+    display: none;
+  }
+  /** table **/
+  table.line-table {
+    display: block;
+    border: 2px solid #e6e6e6;
+  }
+  table.line-table thead {
+    float: left;
+    display: block;
+  }
+  table.line-table thead tr {
+    display: block;
+  }
+  table.line-table thead tr.header th {
+    display: block;
+  }
+  table.line-table tbody {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  table.line-table tbody tr {
+    border-right: 1px solid #e6e6e6;
+    display: table-cell;
+    vertical-align: top;
+  }
+  table.line-table tbody tr:last-child {
+    border-right: none;
+  }
+  table.line-table tbody tr td {
+    display: block;
+  }
+  table.line-table tbody tr td:last-child {
+    border-bottom: none;
+  }
+  table.line-table.line-style1 thead tr th {
+    background: #f2f2f2;
+  }
+  table.line-table.line-style2 tbody tr {
+    border-right: none;
+  }
+  table.line-table.line-style2 tbody tr:nth-child(2n) {
+    background: #ffffff;
+  }
+  table.line-table.line-style2 tbody tr:nth-child(2n) td:nth-child(2n) {
+    background: #f2f2f2;
+  }
+  table.line-table.line-style2 tbody tr:nth-child(2n + 1) {
+    background: #f2f2f2;
+  }
+  table.line-table.line-style2 tbody tr:nth-child(2n + 1) td:nth-child(2n) {
+    background: #ffffff;
+  }
+  .line-pricing-table .pricing-table-wrap {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  /**Woo**/
+  .woocommerce p.woocommerce-result-count,
+  .woocommerce-page p.woocommerce-result-count,
+  .woocommerce .woocommerce-ordering,
+  .woocommerce-page .woocommerce-ordering {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .woocommerce div.product .images,
+  .woocommerce-page div.product .images,
+  .woocommerce div.product .summary,
+  .woocommerce-page div.product .summary {
+    width: 100%;
+    padding: 10px 0;
+    float: none;
+    display: inline-block;
+  }
+}

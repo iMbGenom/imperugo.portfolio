@@ -1,0 +1,1192 @@
+/*============================================================ 
+                        CSS OVERVIEWS
+                1. Accordion
+                2. Alert Message
+                3. Banner
+                4. Blockquote
+                5. Button
+                6. Content Box
+                7. Content Icon
+                8. Carousel
+                9. Column
+                10. Divider
+                11. Dropcaps
+                12. Heading
+                13. Link
+                14. Slider
+                15. Social
+                16. Progress Bar
+                17. Promo Box
+                18. Tabs
+                19. Table
+                20. Testimonial
+                21. Team
+============================================================*/
+
+@import 'config.less';
+
+/* ============================================================ 
+    1. Accordion
+=============================================================*/
+.line-accordion {
+	&.line-style {
+		background: @white;
+		.accordion-title {
+			&.active {
+				a {
+					color: @black;
+					border-color: @black;
+					&:after {
+						border-right: 5px solid transparent;
+						border-top: 5px solid @black;
+						border-left: 5px solid transparent;
+						border-bottom: 5px solid transparent;
+						top: 25px;
+					}
+				}
+			}
+			a {
+				padding: 10px 15px;
+				display: block;
+				color: lighten(@black, 70%);
+				position: relative;
+				border:2px solid lighten(@grey, 10%);
+				font-weight: bold;
+				margin-bottom: 10px;
+				.rounded;
+				&:after {
+					border-bottom: 5px solid transparent;
+					border-left: 5px solid @grey;
+					border-top: 5px solid transparent;
+					content: "";
+					height: 0;
+					margin-top: -5px;
+					position: absolute;
+					right: 15px;
+					top: 50%;
+					width: 0; 
+				}
+			}
+		}
+		.accordion-container {
+			padding: 15px 0 20px 0;
+		}
+	}
+}
+
+/* ============================================================ 
+    2. Alert Message
+=============================================================*/
+.line-alert {
+	padding: 20px;
+	position: relative;
+	border:2px solid;
+	.rounded;
+	&.error {
+		border-color: @red;
+		color:@red;
+		a.close {
+			color:@red;
+		}
+	}
+	&.success {
+		border-color: @green;
+		color:@green;
+		a.close {
+			color:@green;
+		}
+	}
+	&.info {
+		border-color: @blue;
+		color:@blue;
+		a.close {
+			color:@blue;
+		}
+	}
+	&.notice {
+		border-color: @orange;
+		color:@orange;
+		a.close {
+			color:@orange;
+		}
+	}
+	a.close {
+		width: 24px;
+		height: 24px;
+		.rounded;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		right: 20px;
+		margin-top: -12px;
+		&:hover {
+			background-color: rgba(0,0,0,.1);
+			color: @white;
+		}
+		i {
+			line-height: 22px;
+		}
+	}
+}
+
+/* ============================================================ 
+    3. Banner
+=============================================================*/
+.line-banner {
+	text-align: center;
+	a {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		&:hover {
+			img {
+				transform: scale(1.2) rotateZ(-5deg);
+				-webkit-transform: scale(1.2) rotateZ(-5deg);
+				-o-transform: scale(1.2) rotateZ(-5deg);
+				-ms-transform: scale(1.2) rotateZ(-5deg);
+				-moz-transform: scale(1.2) rotateZ(-5deg);
+			}
+		}
+		img {
+			.transition;
+		}
+		.line-mask {
+			position: absolute;
+			left: 0;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			&:before {
+				content: "";
+			    display: inline-block;
+			    height: 100%;
+			    vertical-align: middle;
+			}
+			.line-mask-content {
+				display: inline-block;
+			    height: auto;
+			    vertical-align: middle;
+			    width: 80%;
+				.line-title-banner {
+					color: @white;
+					border-top:1px solid @white;
+					border-bottom:1px solid @white;
+					display: inline-block;
+					font-size: 2.5em;
+				}
+			}
+		}
+	}
+}
+
+/* ============================================================ 
+    4. Blockquote
+=============================================================*/
+blockquote {
+	padding: 40px;
+	text-align: center;
+	background: @scheme;
+	color: @white;
+	.rounded;
+	position: relative;
+	&:after {
+		border-left: 10px solid transparent;
+		border-right: 10px solid transparent;
+		border-top: 10px solid @scheme;
+		bottom: -10px;
+		content: "";
+		display: inline-block;
+		height: 0;
+		left: 50%;
+		margin-left: -10px;
+		position: absolute;
+		width: 0;
+	}
+}
+
+/* ============================================================ 
+    5. Button
+=============================================================*/
+.line-elements {
+	.line-btn, input[type="submit"] {
+		margin: 0 10px 10px 0;
+	}
+}
+.line-btn, input[type="submit"], button[type="submit"] {
+	&.small {
+		height: 40px;
+		line-height: 38px;
+		padding: 0 30px;
+	}
+	&.big {
+		height: 60px;
+		line-height: 57px;
+		padding: 0 70px;
+	}
+	&.no-rounded {
+		.rounded(0);
+	}
+	color: @black;
+	font-weight: bold;
+	height: 50px;
+	line-height: 48px;
+	padding: 0 50px;
+	cursor: pointer;
+	border: 2px solid @black;
+	white-space: nowrap;
+	.rounded(100px);
+	.transition;
+	display: inline-block;
+	&.blue {
+		background: @blue;
+		border-color: transparent;
+		color: @white;
+	}
+	&.lightblue {
+		background: @lightblue;
+		border-color: transparent;
+		color: @white;
+	}
+	&.darkblue {
+		background: @darkblue;
+		border-color: transparent;
+		color: @white;
+	}
+	&.red {
+		background: @red;
+		border-color: transparent;
+		color: @white;
+	}
+	&.green {
+		background:@green;
+		border-color: transparent;
+		color: @white;
+	}
+	&.orange {
+		background: @orange;
+		border-color: transparent;
+		color: @white;
+	}
+	&.dark {
+		background: @dark;
+		border-color: transparent;
+		color: @white;
+	}
+	&.light {
+		background: @light;
+		color: @black;
+		border-color: transparent;
+		&:hover {
+			color: @white;
+		}
+	}
+	&.light-white {
+		border-color: @white;
+		color: @white;
+	}
+	&:hover {
+		background: @black;
+		color: @white;
+	}
+	&.line-disabled, &:disabled {
+		background: lighten(@grey, 15%);
+		color: darken(@grey, 10%);
+		cursor: no-drop;
+		border-color: transparent;
+	}
+}
+
+/* ============================================================ 
+    6. Content Box
+=============================================================*/
+.line-content-box {
+	position: relative;
+	&:hover {
+		.line-back {
+			transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg);
+			.opacity(1);
+		}
+		.line-front {
+			.opacity(0);
+			transform: rotateY(-180deg);
+			-webkit-transform: rotateY(-180deg);
+		}
+	}
+	.line-front {
+		background: @white;
+		border:2px solid @grey;
+		.rounded;
+		padding: 30px;
+		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+	    transform-style: preserve-3d;
+	    -webkit-transform-style: preserve-3d;
+	    .transition(all 0.4s ease-in-out 0s);
+		.line-icons {
+			margin-bottom: 20px;
+		}
+		.line-title {
+			text-transform: none;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+	}
+	.line-back {
+		background: @scheme;
+		color: @white;
+		border:2px solid darken(@scheme, 5%);
+		.rounded;
+		padding: 30px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: rotateY(-180deg);
+		-webkit-transform: rotateY(-180deg);
+	    transform-style: preserve-3d;
+	    -webkit-transform-style: preserve-3d;
+	    .transition(all 0.4s ease-in-out 0s);
+	    .opacity(0);
+		&:before {
+			content: "";
+		    display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+		}
+		.line-back-inner {
+			display: inline-block;
+		    height: auto;
+		    vertical-align: middle;
+		    width: 90%;
+		    .line-btn {
+		    	display: inline-block;
+		    }
+		}
+	}
+}
+
+/* ============================================================ 
+    7. Content Icon
+=============================================================*/
+.line-content-icon {
+	margin-bottom: 70px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.line-icon {
+	    float: left;
+	    text-align: center;
+	    width: 100px;
+	    height: 100px;
+	    img {
+	    	margin-top: 7px;
+	    }
+	}
+	.line-icon-entry {
+		.line-icon-entry-wrap {
+			overflow: hidden;
+		}
+	}
+}
+
+/* ============================================================ 
+    8. Carousel
+=============================================================*/
+.line-carousel,.line-carousel-one {
+	.line-carousel-item {
+		.line-carousel-item-inner {
+			padding: 0 20px;
+		}
+	}
+	.flex-control-nav {
+		text-align: center;
+		margin-top: 70px;
+		li {
+			display: inline-block;
+			a {
+				width: 10px;
+				height: 10px;
+				.rounded(10px);
+				display: inline-block;
+				text-indent: -9999px;
+				cursor: pointer;
+				margin: 0 5px;
+				border:1px solid @scheme;
+				&.flex-active {
+					background: @scheme;
+					border-color: @scheme;
+				}
+			}
+		}
+	}
+}
+.line-carousel-one {
+	.line-carousel-item {
+		.line-carousel-item-inner {
+			padding: 0;
+		}
+	}
+}
+
+/* ============================================================ 
+    9. Column
+=============================================================*/
+.one-half {
+	width: 48%;
+}
+.one-third {
+	width: 30.6666%;
+}
+.two-third {
+	width: 65.3332%;
+}
+.one-fourth {
+	width: 22%;
+}
+.three-fourth {
+	width: 74%;
+}
+.one-half,
+.one-third,
+.two-third,
+.three-fourth,
+.one-fourth {
+	float: left;
+	margin-right: 4%;
+	position: relative;
+	&.last {
+		margin-right: 0;
+	}
+	img {
+		max-width: 100%;
+	}
+	&.line-has-border {
+		&:after {
+			content: "";
+			width: 1px;
+			position: absolute;
+			height: 100%;
+			background: lighten(@grey, 10%);
+			top: 0;
+		}
+	}
+}
+.one-half {
+	&.line-has-border {
+		&:after {
+			right: -4.4%;
+		}
+	}
+}
+.one-third {
+	&.line-has-border {
+		&:after {
+			right: -6.6%;
+		}
+	}
+}
+.one-fourth {
+	&.line-has-border {
+		&:after {
+			right: -9.3%;
+		}
+	}
+}
+.two-third {
+	&.line-has-border {
+		&:after {
+			right: -3%;
+		}
+	}
+}
+.three-fourth {
+	&.line-has-border {
+		&:after {
+			right: -2.8%;
+		}
+	}
+}
+
+/* ============================================================ 
+    10. Divider
+=============================================================*/
+hr {
+	border: none;
+	background: rgba(0,0,0,0.1);
+	height: 2px;
+	margin: 60px 0;
+}
+
+/* ============================================================ 
+    11. Dropcaps
+=============================================================*/
+.line-dropcap {
+	float: left;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	.rounded;
+	text-align: center;
+	line-height: 40px;
+	font-size: 24px;
+	margin: 0 10px 0 0;
+	font-family: times new roman;
+	&.line-style1 {
+		background: @grey;
+		color: @white;
+	}
+	&.line-style2 {
+		background: @black;
+		color: @white;
+	}
+}
+
+/* ============================================================ 
+    12. Heading
+=============================================================*/
+h1, h2, h3, h4, h5, h6 {
+	color: lighten(@black, 10%);
+	font-family: @heading-fontface;
+	font-weight: bold;
+	word-wrap: break-word;
+	margin-bottom: 20px;
+	&.line-title {
+		text-transform: uppercase;
+	}
+	&.line-title-1 {
+		position: relative;
+		font-weight: normal;
+		display: inline-block;
+		&:after {
+			background: @black;
+		    content: "";
+		    height: 3px;
+		    margin-top: -1px;
+		    position: absolute;
+		    left: 115%;
+		    top: 50%;
+		    width: 150px;
+		}
+		&:before {
+			background: @black;
+		    content: "";
+		    height: 3px;
+		    margin-top: -1px;
+		    position: absolute;
+		    right: 115%;
+		    top: 50%;
+		    width: 150px;
+		}
+	}
+	&.line-title-2 {
+		position: relative;
+		margin-bottom: 30px;
+		&.fix-left {
+			&:before {
+				left: 0;
+				margin-left: 0;
+			}
+		}
+		&:before {
+			background: @black;
+		    content: "";
+		    height: 3px;
+		    left: 50%;
+		    margin-left: -50px;
+		    position: absolute;
+		    top: 100%;
+		    width: 100px;
+		}
+	}
+}
+h1 {
+	font-size: 60px;
+}
+h2 {
+	font-size: 36px;
+}
+h3 {
+	font-size: 24px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+
+/* ============================================================ 
+    13. Link
+=============================================================*/
+.underline {
+	text-decoration: underline;
+}
+.highlight {
+	background: @green;
+	color: @white;
+	padding: 0 5px;
+}
+abbr[title], abbr[data-original-title] {
+    border-bottom: 1px dotted #737373;
+    cursor: help;
+}
+.label {
+	.rounded(3px);
+	padding: 5px 10px;
+	color: @white;
+	background: @grey;
+	&.label-default {
+		background: @grey;
+	}
+	&.label-primary {
+		background: @blue;
+	}
+	&.label-success {
+		background: @green;
+	}
+	&.label-info {
+		background: @lightblue;
+	}
+	&.label-warning {
+		background: @orange;
+	}
+	&.label-danger {
+		background: @red;
+	}
+}
+
+/* ============================================================ 
+    14. Slider
+=============================================================*/
+.flexslider {
+	overflow: hidden;
+	position: relative;
+	a {
+		font-weight: bold;
+	}
+	&:hover {
+		.flex-direction-nav {
+			a {
+				&.flex-prev {
+				left: 30px;
+				}
+				&.flex-next {
+					right: 30px;
+				}
+			}
+		}
+	}
+	.flex-direction-nav {
+		a {
+			position: absolute;
+			z-index: 999;
+			top: 50%;
+			transform:translateY(-50%);
+			-webkit-transform:translateY(-50%);
+			-ms-transform:translateY(-50%);
+			-o-transform:translateY(-50%);
+			-moz-transform:translateY(-50%);
+			&.flex-prev {
+				left: -20px;
+			}
+			&.flex-next {
+				right: -20px;
+			}
+			i {
+				font-size: 56px;
+				color: @white;
+			}
+		}
+	}
+	.flex-control-nav {
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		z-index: 999;
+		height: 5px;
+		bottom: 30px;
+		li {
+			display: inline-block;
+			a {
+				width: 50px;
+				height: 5px;
+				background: @white;
+				text-indent: -9999px;
+				display: inline-block;
+				margin: 0 5px;
+				cursor: pointer;
+				&.flex-active {
+					background: @black;
+				}
+			}
+		}
+	}
+}
+
+/* ============================================================ 
+    15. Sosial
+=============================================================*/
+ul.social-networks {
+	width: 100%; 
+	li {
+		display: inline-block;
+		a {
+			width: 32px;
+			height: 32px;
+			background: @black;
+			color: @white;
+			text-align: center;
+			display: inline-block;
+			margin-right: 5px;
+			.rounded(100%);
+			position: relative;
+			&:hover {
+				background: @scheme;
+				&:before,
+				&:after {
+					.opacity(1);
+					visibility: visible;
+					display: block\9;
+				}
+			}
+			&:before {
+				content: attr(data-title);
+				position: absolute;
+				background: @black;
+				left: 0;
+				top: -35px;
+				padding: 0 10px;
+				.opacity(0);
+				visibility: hidden;
+				display: none\9;
+				.transition;
+			}
+			&:after {
+				border-top: 7px solid @black;
+				border-right: 7px solid transparent;
+				content: "";
+				height: 0;
+				width: 0;
+				position: absolute;
+				left: 0;
+				top: -10px;
+				.opacity(0);
+				visibility: hidden;
+				display: none\9;
+				.transition;
+			}
+			i {
+				line-height: 32px;
+			}
+		}
+	}
+}
+
+/* ============================================================ 
+    16. Progress Bar
+=============================================================*/
+.line-progress-bar {
+	position: relative;
+	text-align: left;
+	p {
+		margin-bottom: 5px;
+		display: block;
+		span {
+			float: right;
+		}
+	}
+	.line-progress-bar-wrap {
+		background: lighten(@grey, 15%);
+		position: relative;
+		height: 10px;
+		.rounded(10px);
+		.line-progress-bar-inner {
+			height: 100%;
+			position: relative;
+			overflow: hidden;
+			background: @scheme;
+			.rounded(10px);
+			&.blue {
+				background: @blue;
+			}
+			&.lightblue {
+				background: @lightblue;
+			}
+			&.darkblue {
+				background: @darkblue;
+			}
+			&.red {
+				background: @red;
+			}
+			&.green {
+				background:@green;
+			}
+			&.orange {
+				background: @orange;
+			}
+			&.dark {
+				background: @dark;
+			}
+			&.light {
+				background: @light;
+			}
+		}
+	}
+	.line-animation {
+		.line-progress-bar-inner {
+			&:after,
+			span {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-image: -webkit-gradient(linear, 0 0, 100% 100%,  
+					color-stop(.25, rgba(255, 255, 255, .2)),  
+					color-stop(.25, transparent), 
+					color-stop(.5, transparent),  
+					color-stop(.5, rgba(255, 255, 255, .2)),  
+					color-stop(.75, rgba(255, 255, 255, .2)),  
+					color-stop(.75, transparent), to(transparent));
+				background-image: -moz-linear-gradient(  -45deg,  rgba(255, 255, 255, .2) 25%,  
+					transparent 25%,  
+					transparent 50%,  
+					rgba(255, 255, 255, .2) 50%,  
+					rgba(255, 255, 255, .2) 75%,  
+					transparent 75%,  
+					transparent);
+				z-index: 1;
+				-webkit-background-size: 50px 50px;
+				-moz-background-size: 50px 50px;
+				background-size: 50px 50px;
+				-webkit-animation: move 2s linear infinite;
+				-moz-animation: move 2s linear infinite;
+			}
+			&:after {
+				display: none;
+			}
+		}
+	}
+	@-webkit-keyframes move {
+		0% {
+			background-position: 0 0;
+		}
+		100% {
+			background-position: 50px 50px;
+		}
+	}
+	@-moz-keyframes move {
+		0% {
+			background-position: 0 0;
+		}   
+		100% {
+			background-position: 50px 50px;
+		}
+	}
+}
+
+/* ============================================================ 
+    17. Promo Box
+=============================================================*/
+.line-promobox {
+	border: 5px solid lighten(@grey, 10%);
+	padding: 50px;
+	.rounded;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	.line-promobutton {
+		.line-btn {
+			position: absolute;
+			right: 20px;
+			top: 50%;
+			margin-top: -20px;
+			&.small {
+				margin-top: -15px;
+			}
+			&.big {
+				margin-top: -25px;
+			}
+		} 
+	}
+	&.has-button {
+		.line-promocontent {
+			margin-right: 200px;
+		}
+	}
+	&.no-button {
+		.line-promocontent {
+			margin-right: 0;
+		}
+		.line-promobutton {
+			display: none;
+		}
+	}
+}
+
+/* ============================================================ 
+    18. Tabs
+=============================================================*/
+.line-tabs {
+	.line-filter-tabs {
+		border-bottom: 2px solid lighten(@grey, 10%);
+		display: inline-block;
+		width: 100%;
+		li {
+			float: left;
+			margin: 0;
+			a {
+				padding: 15px 30px;
+				display: block;
+				color: darken(@grey, 10%);
+				background: @white;
+				font-weight: bold;
+				line-height: 100%;
+				border:2px solid transparent;
+				display: block;
+				position: relative;
+				.transition(none);
+				&:after {
+					height: 4px;
+					content: "";
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 100%;
+				} 
+				&.selected {
+					color: @black;
+					border:2px solid lighten(@grey, 10%);
+					&:after {
+						background: #fff;
+					} 
+				}
+			}
+		}
+	}
+	.tab-container {
+		padding: 20px 0;
+		background: @white;
+		clear: both;
+		aside {
+			margin-bottom: 0;
+		}
+	}
+}
+
+/* ============================================================ 
+    19. Table
+=============================================================*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	&.line-table {
+		&.line-style1 {
+			tr {
+				&.header {
+					color: @black;
+					text-align: left;
+				}
+				td, th {
+					border-bottom: 2px solid lighten(@grey, 10%);
+					padding: 15px 10px;
+				}
+			}
+		}
+		&.line-style2 {
+			tr {
+				&.header {
+					color: @black;
+					text-align: left;
+					th {
+						background: @white;
+					}
+				}
+				&:nth-child(2n-1) {
+					background: lighten(@grey, 10%);
+				}
+				td, th {
+					padding: 15px 10px;
+				}
+			}
+		}
+	}
+}
+.line-pricing-table {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	.pricing-table-wrap {
+		display: table-cell;
+		text-align: center;
+		ul {
+			border: 2px solid lighten(@grey, 10%);
+			.rounded;
+			margin: 0 10px;
+			padding: 40px 20px;
+			background: @white;
+			li {
+				&.line-head-row {
+					font-size: 24px;
+					line-height: 100%;
+					font-weight: bold;
+					padding-bottom: 5px;
+				}
+				&.line-price-row {
+					border-bottom: 2px solid lighten(@grey, 10%);
+					padding-bottom: 30px;
+					margin-bottom: 35px;
+					p {
+						margin: 0;
+					}
+					small {
+						font-size: 18px;
+						color: darken(@grey, 10%);
+					}
+					span {
+						font-size: 72px;
+						color: @black;
+						font-weight: bold;
+						font-family: @heading-fontface;
+						line-height: 100%;
+						&.symbol {
+							position: relative;
+							font-size: 24px;
+							color: @black;
+							font-weight: normal;
+							font-family: @body-fontface;
+							top: -15px;
+						}
+					}
+				}
+				&.line-btn-row {
+					margin-top: 30px;
+				}	
+			}
+			&.line-highlight {
+				border-color: @black;
+				padding: 0;
+				li {
+					&.line-price-row {
+						background: @black;
+						border-color:@black; 
+						small {
+							color: @white;
+						}
+						span {
+							color: @white;
+							&.symbol {
+								color: @white;
+							}
+						}
+					}
+					&.line-head-row {
+						color: @white;
+						background: @black;
+						padding-top: 40px;
+					}
+					&.line-btn-row {
+						padding-bottom: 40px;
+					}	
+				}
+			}
+		}
+	}
+}
+
+/* ============================================================ 
+    20. Testimonial
+=============================================================*/
+.line-testimonials {
+	.line-testimonials-content {
+		font-style: italic;
+		margin-bottom: 30px;
+		font-size: 16px;
+	}
+	.line-testimonials-meta {
+		font-weight: bold;
+		font-size: 18px;
+		span {
+			color: @scheme;
+		}
+	}
+}
+
+/* ============================================================ 
+    21. Team
+=============================================================*/
+.line-team {
+	position: relative;
+	&:hover {
+		.line-back {
+			transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg);
+			.opacity(1);
+		}
+		.line-front {
+			.opacity(0);
+			transform: rotateY(-180deg);
+			-webkit-transform: rotateY(-180deg);
+		}
+	}
+	.line-front {
+		background: lighten(@grey, 15%);
+		.rounded;
+		transform: rotateY(0deg);
+		-webkit-transform: rotateY(0deg);
+	    transform-style: preserve-3d;
+	    -webkit-transform-style: preserve-3d;
+	    .transition(all 0.4s ease-in-out 0s);
+		.line-img {
+			margin-bottom: 20px;
+		}
+		.line-info {
+			padding-bottom: 20px;
+		}
+		.line-title {
+			text-transform: none;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+	}
+	.line-back {
+		background: @scheme;
+		color: @white;
+		border:2px solid darken(@scheme, 5%);
+		.rounded;
+		padding: 30px 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		transform: rotateY(-180deg);
+		-webkit-transform: rotateY(-180deg);
+	    transform-style: preserve-3d;
+	    -webkit-transform-style: preserve-3d;
+	    .transition(all 0.4s ease-in-out 0s);
+	    .opacity(0);
+		&:before {
+			content: "";
+		    display: inline-block;
+		    height: 100%;
+		    vertical-align: middle;
+		}
+		.line-back-inner {
+			display: inline-block;
+		    height: auto;
+		    vertical-align: middle;
+		    width: 90%;
+		    .line-btn {
+		    	display: inline-block;
+		    }
+		}
+	}
+}

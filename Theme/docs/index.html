@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Galaxy Template Documentation</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="css/prism.css" />
+
+		<script src="js/prism.js"></script>
+		<script src="js/jquery.js"></script>
+
+		<script type="text/javascript">
+			(function($) {
+				"use strict";
+
+				$(function() {
+					$('#site-menu a').on('click', function(e) {
+						e.preventDefault();
+
+						var elm = $(this.hash);
+						if (elm.length > 0) {
+							$('html, body').animate({
+								scrollTop: elm.offset().top
+							});
+						}
+					});
+				});
+			})(jQuery);
+		</script>
+	</head>
+	<body>
+		<aside id="site-sidebar">
+			<div id="logo">
+				<a href="#top">
+					<img src="img/logo.png" alt="Galaxy" />
+				</a>
+			</div>
+			<nav id="site-menu">
+				<ul>
+					<li><a href="#html-structure">HTML Structure</a></li>
+					<li><a href="#css-structure">CSS Structure</a></li>
+					<li>
+						<a href="#customization">Style Customization</a>
+						<ul>
+							<li><a href="#custom-variables">Variables</a></li>
+							<li><a href="#custom-sidebar-position">Sidebar Position</a></li>
+							<li><a href="#custom-footer-layout">Footer Layout</a></li>
+						</ul>
+					</li>
+					<li><a href="#portfolio-layout">Portfolio Layout</a></li>
+					<li><a href="#elements">Elements</a></li>
+					<li><a href="#mailchimp-integration">Mailchimp Integration</a></li>
+					<li><a href="#ajax-contact-form">Ajax Contact Form</a></li>
+					<li><a href="#auto-responder">Auto Responder</a></li>
+					<!-- <li><a href="#google-custom-search">Google Custom Search</a></li> -->
+					<li><a href="#credits">Credits</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<main id="site-content">
+			<div class="page" id="overview">
+				<h1>Galaxy</h1>
+				<h3>A Gorgeous &amp; Multi-page Template For Portfolio</h3>
+				<div class="content">
+					<div class="information">
+						<ul>
+							<li>Version: 1.0.0</li>
+							<li>Author: <a href="http://linethemes.com">LineThemes</a></li>
+						</ul>
+						<div class="message">
+							Thank you for purchasing my theme. If you have any questions that are beyond the scope of this documentation, please feel free to email us via the contact form <a target="_blank" href="http://themeforest.net/user/linethemes">here</a>!
+						</div>
+					</div>
+
+					<p class="note">
+						Please be noticed that all the parameters used to install "Contact Form", "Auto Responder", "Mailchimp Integration" are placed in the file "php/config.php"
+					</p>
+				</div>
+			</div>
+			<div class="page" id="html-structure">
+				<h3>HTML Structure</h3>
+				<div class="content">
+					A basic HTML page in Galaxy has the following structure:
+
+					<pre><code class="language-markup">&lt;header id=&quot;line-header&quot;&gt;
+	&lt;!-- Page header content --&gt;
+&lt;/header&gt;
+
+&lt;div id=&quot;line-content-top&quot;&gt;
+	&lt;!-- Content of popup navigator --&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;line-page-body&quot;&gt;
+	&lt;div class=&quot;line-container&quot;&gt;
+		&lt;div class=&quot;line-page-content&quot;&gt;
+			&lt;!-- Page content --&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;line-content-bottom&quot;&gt;
+	&lt;!-- Content bottom area --&gt;
+&lt;/div&gt;
+
+&lt;footer id=&quot;line-footer&quot;&gt;
+	&lt;!-- Footer content --&gt;
+&lt;/footer&gt;
+					</code></pre>
+				</div>
+			</div>
+
+			<div class="page" id="css-structure">
+				<h3>CSS Structure</h3>
+				<div class="content">
+					<p>Galaxy template was basically built on <a href="http://lesscss.org" target="_blank">LESS</a>. All the LESS files are located in the folder <strong>assets/less</strong>
+					and could be edited with some popular editors, such as NotePad++, Sublime Text,ect.</p>
+					<p>Here is the list of LESS files used in this template:</p>
+					<ul>
+						<li><strong>assets/less/config.less</strong> (Template variables)</li>
+						<li><strong>assets/less/responsive.less</strong> (Responsive styles)</li>
+						<li><strong>assets/less/shortcode.less</strong> (Shortcode styles)</li>
+						<li><strong>assets/less/woocommerce.less</strong> (WooCommerce styles)</li>
+						<li><strong>style.less</strong> (Template styles)</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="page" id="customization">
+				<h3>Style Customization</h3>
+				<div class="content">
+					<section id="custom-variables">
+						<h4>Variables</h4>
+						<div class="content">
+							<p>We provide variables to help you with the template customization. (You can modify the value of variables in the file "<strong>assets/less/config.less</strong>")</p>
+							<ul>
+								<li><strong>@layout-width</strong>: Width display content settings.</li>
+								<li><strong>@body-background</strong>: Background color and image settings.</li>
+								<li><strong>@submenu-width</strong>: Width submenu settings.</li>
+								<li><strong>@scheme</strong>: Main color scheme of template.</li>
+								<li><strong>@body-font</strong>: Fontface applied to the whole website (body).</li>
+								<li><strong>@heading-font</strong>: Fontface applied exclusively to heading H1, H2,..., and H6.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section id="custom-sidebar-position">
+						<h4>Sidebar Position</h4>
+						<div class="content">
+							Galaxy template provides single sidebar including 2 classes by default to customize the display content.
+							<ul>
+								<li>line-sidebar-left: To move the sidebar to the left of the content.</li>
+								<li>line-sidebar-right: To move the sidebar to the right of the content.</li>
+							</ul>
+						</div>
+					</section>
+
+					<section id="custom-footer-layout">
+						<h4>Footer Layout</h4>
+						<div class="content">
+							<p>In Galaxy template, footer part is arranged as a grid, divided into 12 columns. Each component in the footer will be determined the width spread from 1 to 12 columns, according to the releven class as line1, line2, ..., line12.</p>
+							<p>For example:</p>
+
+							<pre><code class="language-markup">&lt;div id=&quot;line-content-bottom&quot;&gt;
+	&lt;div class=&quot;line-wrap line-sidebar-bottom&quot;&gt;
+		&lt;!-- Element 1 --&gt;
+		&lt;div class=&quot;line-column line3&quot;&gt;
+			&lt;aside class=&quot;widget widget_text&quot;&gt;
+				&lt;div class=&quot;textwidget&quot;&gt;
+					&lt;!-- Widget content --&gt;
+				&lt;/div&gt;
+			&lt;/aside&gt;
+		&lt;/div&gt;
+
+		&lt;!-- Element 2 --&gt;
+		&lt;div class=&quot;line-column line3&quot;&gt;
+			&lt;aside class=&quot;widget widget_text&quot;&gt;
+				&lt;div class=&quot;textwidget&quot;&gt;
+					&lt;!-- Widget content --&gt;
+				&lt;/div&gt;
+			&lt;/aside&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="page" id="portfolio-layout">
+				<h3>Portfolio Layout</h3>
+				<div class="content">
+					<p>Galaxy used the grid style to display the portfolio items. Each row can present maximum 4 portfolio items.</p>
+					<p>In order to change the number of portfolio displaying in the same row, you could insert the class "<strong>line-col-x</strong>", (with x is the amount of displaying column) for the div tag with the CLASS as "<strong>line-content</strong>"</p>
+					<p>For instance,</p>
+					<pre><code class="language-markup">&lt;div class="line-content line-content-isotope line-col-4"&gt;</code></pre>
+
+					<section id="portfolio-styles">
+						<h4>Portfolio Styles</h4>
+						<div class="content">
+							<p>With the purpose of serving the demand of designing portfolio, Galaxy has already been designed with 2 default styles for portfolio. 
+							Each of them will be correlative with one of the below:</p>
+
+							<ul>
+								<li>
+									<strong>line-portfolio-bg</strong> (<a href="http://demo.linethemes.com/html/galaxy/portfolio-bg.html">Demo</a>)
+								</li>
+								<li>
+									<strong>line-portfolio-ajax</strong> (<a href="http://demo.linethemes.com/html/galaxy/portfolio-ajax.html">Demo</a>)
+								</li>
+							</ul>
+
+							<p>In order to establish the portfolio style, you just need to insert one of these two classes to put in the DIV tag with the CLASS as <strong>line-portfolio</strong></p>
+							<p>For example:</p>
+							<pre><code class="language-markup">&lt;div class=&quot;line-wrap line-portfolio line-portfolio-bg&quot;&gt;
+    ...
+&lt;/div&gt;</code></pre>
+						</div>
+					</section>
+				</div>
+			</div>
+
+			<div class="page" id="elements">
+				<h3>Elements</h3>
+				<div class="content">
+					<ul>
+						<li>Accordion</li>
+		                <li>Alert Message</li>
+		                <li>Banner</li>
+		                <li>Blockquote</li>
+		                <li>Button</li>
+		                <li>Content Box</li>
+		                <li>Content Icon</li>
+		                <li>Carousel</li>
+		                <li>Column</li>
+		                <li>Divider</li>
+		                <li>Dropcaps</li>
+		                <li>Heading</li>
+		                <li>Link</li>
+		                <li>Slider</li>
+		                <li>Social</li>
+		                <li>Progress Bar</li>
+		                <li>Promo Box</li>
+		                <li>Tabs</li>
+		                <li>Table</li>
+		                <li>Testimonial</li>
+		                <li>Team</li>
+					</ul>
+
+					<p><a href="http://demo.linethemes.com/html/galaxy/elements.html" target="_blank">Demo</a></p>
+				</div>
+			</div>
+
+			<div class="page" id="mailchimp-integration">
+				<h3>MailChimp Integration</h3>
+				<div class="content">
+					<ul>
+						<li>
+							<strong>mailchimp_key:</strong> MailChimp provides the API Key. You can take the API Key from this instruction: http://kb.mailchimp.com/article/where-can-i-find-my-api-key
+							<pre><code class="language-php">$config['mailchimp_key'] = '13c3e4b3ea4c85d2ca33b4be3b75de2c-us3';</code></pre>
+						</li>
+						<li>
+							<strong>mailchimp_list_id:</strong> List ID was created in MailChimp.com. You can see the instruction to take the “List ID” here: http://kb.mailchimp.com/article/how-can-i-find-my-list-id
+							<pre><code class="language-php">$config['mailchimp_list_id'] = '3e329a10f8';</code></pre>
+						</li>
+						<li>
+							<strong>mailchimp_success_message:</strong> This is the message to inform users after successfully subscribed.
+					  		<pre><code class="language-php"> $config['mailchimp_success_message'] = 'Your success message';</code></pre>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="page" id="ajax-contact-form">
+				<h3>AJAX Contact Form</h3>
+				<div class="content">
+					<p>Currently, there are 3 parameters to establish the “Contact form”</p>
+
+					<ul>
+						<li>
+							<strong>email_to:</strong>  Customer's feedback recipient.
+							<pre><code class="language-php">$config['email_to'] = 'support@linethemes.com';</code></pre>
+						</li>
+						<li>
+							<strong>default_subject:</strong> The feedback email subject will be sent to the above established email address.
+							<pre><code class="language-php">$config['default_subject'] = 'New contact message from linethemes.com';</code></pre>
+						</li>
+						<li>
+							<strong>success_message:</strong> The notification to customer when their email is successfully sent.
+							<pre><code class="language-php">$config['success_message'] = 'Thank you! Your message has been sent to us';</code></pre>
+						</li>
+					</ul>
+
+					<p>You can change the email content by editing the file <strong>"php/tmpl/mail_content.php"</strong></p>
+				</div>
+			</div>
+
+			<!-- <div class="page" id="google-custom-search">
+				<h3>Google Custom Search</h3>
+				<div class="content">
+					<p>If you want to use Google Custom Search on your website you have to create an API Key and configure following these steps: - Go to: <a href="http://www.google.com/cse" target="_blank">http://www.google.com/cse</a></p>
+			
+					<h4>Step 1</h4>
+					<p>Click "<strong>Add</strong>" to create a new site to search.</p>
+					<p><img src="img/custom-search/1.jpg" alt="Step 1"></p>
+					
+					<h4>Step 2</h4>
+					<p>Insert the website URL then click "<strong>Create</strong>"</p>
+					<p><img src="img/custom-search/2.jpg" alt="Step 2"></p>
+					
+					<h4>Step 3</h4>
+					<p>After creating the site to search, access to the Control Panel to modify your search engine layout.</p>
+					<p><img src="img/custom-search/3.jpg" alt="Step 3"></p>
+					
+					<h4>Step 4</h4>
+					<p>Choose the section "<strong>Look And Feel</strong>" to customize the layout for search engine page.</p>
+					<p><img src="img/custom-search/4.jpg" alt="Step 4"></p>
+					
+					<h4>Step 5</h4>
+					<p>Choose the layout as "<strong>Results only</strong>" then click "<strong>Save &amp; Get Code</strong>"</p>
+					<p><img src="img/custom-search/5.jpg" alt="Step 5"></p>
+					
+					<h4>Step 6</h4>
+					<p>Copy all the code in the red box below:</p>
+					<p><img src="img/custom-search/6.jpg" alt="Step 6"></p>
+			
+					<h4>Step 7</h4>
+					<p>Open file "<strong>custom-search.html</strong>", search the following:</p>
+					<pre><code class="language-markup">&lt;div class=&quot;page-content&quot;&gt;
+				&lt;div class=&quot;page-content-inner&quot;&gt;
+					&lt;!-- Google Custom Search script at here --&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;</code></pre>
+			
+					<p>Replace the code <code class="language-markup">&lt;!-- Google Custom Search script at here --&gt;</code> by the new one taken from Step 6</p>
+				</div>
+			</div> -->
+
+			<div class="page" id="auto-responder">
+				<h3>Auto Respond</h3>
+				<div class="content">
+					<ul>
+						<li>
+							To activate the “Auto Respond” function, you need to modify the value of the parameter <strong>$config['auto_response']</strong> to <strong>true</strong>.
+							<pre><code class="language-php">$config['auto_response'] = true;</code></pre>
+						</li>
+						<li>
+							<strong>auto_response_name:</strong> This is the sender's name.
+							<pre><code class="language-php">$config['auto_response_name'] = 'Linethemes Support';</code></pre>
+						</li>
+						<li>
+							<strong>auto_response_email:</strong> This is sender's email address. This parameter will be used to receive the reply email from the user if necessary.
+							<pre><code class="language-php">$config['auto_response_email'] = 'support@linethemes.com';</code></pre>
+						</li>
+						<li>
+							<strong>auto_response_subject:</strong> This is the email's subject that will be sent to the user.
+							<pre><code class="language-php">$config['auto_response_subject'] = 'Thank you for contacted me from linethemes.com';</code></pre>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="page" id="credits">
+				<h3>Credits</h3>
+				<div class="content">
+					<ul>
+						<li>
+							Icon Font
+							<ul>
+								<li>Font-Awesome (<a target="_blank" href="http://fontawesome.io/">http://fontawesome.io/</a>)</li>
+							</ul>
+						</li>
+						<li>
+							Javascript
+							<ul>
+								<li>jQuery (<a target="_blank" href="http://jquery.com/">http://jquery.com/</a>)</li>
+								<li>jQuery UI (<a target="_blank" href="http://jqueryui.com/">http://jqueryui.com/</a>)</li>
+								<li>jQuery Validate (<a target="_blank" href="http://jqueryvalidation.org/">http://jqueryvalidation.org/</a>)</li>
+								<li>jQuery Countdown (<a target="_blank" href="http://rendro.github.io/countdown/">http://rendro.github.io/countdown/</a>)</li>
+								<li>jQuery CountTo (<a target="_blank" href="http://www.jqueryscript.net/time-clock/Simple-jQuery-Plugin-For-Counting-Time-Up-Down-countTo.html">http://www.jqueryscript.net/time-clock/Simple-jQuery-Plugin-For-Counting-Time-Up-Down-countTo.html</a>)</li>
+								<li>Flexslider (<a target="_blank" href="http://flexslider.woothemes.com">http://flexslider.woothemes.com</a>)</li>
+								<li>Isotope (<a target="_blank" href="http://isotope.metafizzy.co/">http://isotope.metafizzy.co/</a>)</li>
+								<li>Scroll Reveal (<a target="_blank" href="http://scrollrevealjs.org/">http://scrollrevealjs.org/</a>)</li>
+								<li>WayPoints (<a target="_blank" href="http://imakewebthings.com/jquery-waypoints/">http://imakewebthings.com/jquery-waypoints/</a>)</li>
+								<li>Nivo Lightbox (<a target="_blank" href="http://dev7studios.com/plugins/nivo-lightbox/">http://dev7studios.com/plugins/nivo-lightbox/</a>)</li>
+								<li>Images Loaded (<a target="_blank" href="http://desandro.github.io/imagesloaded/">http://desandro.github.io/imagesloaded/</a>)</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
