@@ -573,28 +573,28 @@ img.line-thumbnail:hover {
     4. BACKGROUND
 =============================================================*/
 .bg1 {
-  background-image: url(http://placehold.it/1280x768);
+  background-image: url(/assets/img/flikr/chairs.jpg);
 }
 .bg2 {
-  background-image: url(http://placehold.it/1280x768/333);
+  background-image: url(/assets/img/flikr/amsterdam.jpg);
 }
 .bg2s {
   background-image: url(http://placehold.it/1280x768);
 }
 .bg3 {
-  background-image: url(http://placehold.it/1280x768);
+  background-image: url(/assets/img/flikr/mac1.jpg);
 }
 .bg4 {
-  background-image: url(http://placehold.it/1280x768);
+  background-image: url(/assets/img/flikr/mac2.jpg);
 }
 .bg5 {
-  background-image: url(http://placehold.it/1280x768);
+  background-image: url(/assets/img/flikr/moleskine.jpg);
 }
 .bg6 {
-  background-image: url(http://placehold.it/1280x768);
+  background-image: url(/assets/img/flikr/sea.jpg);
 }
 .bg7 {
-  background-image: url(http://placehold.it/1280x768/000);
+  background-image: url(/assets/img/flikr/nyc.jpg);
 }
 .bg8 {
   background-image: url(http://placehold.it/1280x768);
