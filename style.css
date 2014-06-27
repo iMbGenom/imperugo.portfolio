@@ -569,6 +569,37 @@ img.line-thumbnail:hover {
 .white {
   background: #ffffff;
 }
+
+
+.text-red {
+  color: #e74c3c;
+}
+.text-blue {
+  color: #009eca;
+}
+.text-green {
+  color: #97c13f;
+}
+.text-lightblue {
+  color: #58c5c0;
+}
+.text-darkblue {
+  color: #42555c;
+}
+.text-orange {
+  color: #f6ba70;
+}
+.text-grey {
+  color: #cccccc;
+}
+.text-black {
+  color: #000000;
+}
+.text-white {
+  color: #ffffff;
+}
+
+
 /* ============================================================ 
     4. BACKGROUND
 =============================================================*/

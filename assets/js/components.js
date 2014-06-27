@@ -156,6 +156,7 @@
 
 			if (this.options.ajaxEnabled == true) {
 				this.container.on('click', '.entry > a', $.proxy(this._loadAjaxContent, this));
+				this.container.on('click', '.entry > div > h4 > a', $.proxy(this._loadAjaxContent, this));
 				this.ajaxPanel.on('click', '.line-nav-prev, .line-nav-next', $.proxy(this._loadAjaxContent, this));
 				this.ajaxPanel.on('click', '.line-nav-hide', $.proxy(this._closeAjaxBox, this));
 			}

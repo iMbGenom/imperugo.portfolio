@@ -10,8 +10,7 @@ app.use(compression({
 //enabling public folder
 var path = require('path');
 var publicFolder = path.dirname(module.filename);
-var oneYear = 31557600000;
-app.use(express.static(publicFolder, { maxAge: oneYear }));
+app.use(express.static(publicFolder));
 
 var port = Number(process.env.PORT || 5000);
 
