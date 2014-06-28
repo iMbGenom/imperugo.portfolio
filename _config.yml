@@ -1,0 +1,28 @@
+author: Ugo Lattanzi
+description: Ugo Lattanzi Personal Site
+url: http://ugolattanzi.com
+title: Ugo Lattanzi
+subtitle: Web guy, Microsoft MVP. Father. Snowboarder. All round nice guy.
+encoding: utf-8
+excerpt_separator: ""   # Workaround for http://blog.slaks.net/2013-08-09/jekyll-tag-was-never-closed
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+pygments: true
+version: 1.1.1
+
+# Google Analytics
+google_analytics_tracking_id: UA-8212043-1
+google_analytics_domain: tostring.it
+
+#
+# Jekyll Settings
+#
+markdown: redcarpet
+permalink: /:year/:month/:day/:title/
+paginate: 5
+paginate_path: "page/:num"
+category_dir: categories
+
+gems:
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap

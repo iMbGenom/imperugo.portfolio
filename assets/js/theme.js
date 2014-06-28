@@ -3,6 +3,20 @@
 
 	$(function() {
 		/**
+		 * Add Google Analitcs Events for event tracking
+		 */
+		$('a[data-event-label]').mousedown(function() {
+
+			var eventCategory = $(this).attr("data-event-category");
+
+			if(!eventCategory){
+				eventCategory = 'Uncategorized';
+			}
+
+		  ga('send', 'event', eventCategory, 'click', $(this).attr('data-event-label'),1);
+		});
+
+		/**
 		 * Initialize countdown plugin
 		 */
 		if ($.fn.countdown !== undefined) {

@@ -1,726 +1,627 @@
-<!DOCTYPE html>
-<html lang="en-US">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="description" content="Ugo Lattanzi Portfolio" />
-		<meta name="author" content="Ugo Lattanzi" />
-		<meta name="keywords" content="wordpress, one page, themes, wordpress themes, premium wordpress themes, premium themes, wordpress theme shop, free themes, wordpress templates" />
-		<title>Ugo Lattanzi Offical Site</title>
-		<link rel="shortcut icon" href="assets/img/favico.ico">
-		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/img/apple-icon-114x114px.png" />
-		<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/img/apple-icon-144x144px.png" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/shortcode.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/woocommerce.css" />
-		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
-		<link rel="stylesheet" type="text/css" href="assets/3rd/font-awesome/font-awesome.css" />
-		<link rel="stylesheet" type="text/css" href="assets/3rd/nivo-lightbox/nivo-lightbox.css" />
-		<link rel="stylesheet" type="text/css" href="assets/3rd/nivo-lightbox/themes/default/default.css" />
+---
+layout: default
+title: Ugo Lattanzi Offical Site
+description: Ugo Lattanzi Portfolio
+bodyClass: line-home line-first-full
+tags:
+- ugo lattanzi
+- imperugo
+- tostring
+- software architect
+- scrum master
+- .net
+- nodejs
+- curriculum vitae
+- cv
+- blog
+---
 
-		<!-- Google Font -->
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700" />
-		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway:400,700" />
-		
-		<!--[if IE]>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.js"></script>
-		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
-		<![endif]-->
+<header id="line-header">
+    <div class="line-logo">
+        <a class="line-logo-simple" href="index.html">
+            <img src="assets/img/logo.svg" alt="logo">
+        </a>
+    </div>
+    <div class="line-menu-btn">
+        <span></span>
+    </div>
+    <div class="line-menu-btn-x">
+        <span></span>
+    </div>
+</header>
+<!--end line-header-->
 
-	</head>
-	<body class="line-home line-first-full">
-        <div id="line-wrapper">
-        	<header id="line-header">
-        		<div class="line-logo">
-					<a class="line-logo-simple" href="index.html">
-						<img src="assets/img/logo.svg" alt="logo">
-					</a>
-				</div>
-				<div class="line-menu-btn">
-					<span></span>
-				</div>
-				<div class="line-menu-btn-x">
-					<span></span>
-				</div>
-        	</header>
-        	<!--end line-header-->
+{% include navigation.html %}
 
-        	<div id="line-content-top">
-        		<div class="line-wrap line-sidebar-top">
-			      	<div class="line-column line3">
-			      		<aside class="widget">
-							<h3 class="line-title">Blog</h3>
-							<ul>
-								<li><a href="http://tostring.it">English</a></li>
-								<li><a href="http://imperugo.tostring.it">Italian</a></li>
-							</ul>
-						</aside>
-						<aside class="widget">
-							<h3 class="line-title">Layout</h3>
-							<ul>
-								<li><a href="no-sidebar.html">No Sidebar</a></li>
-								<li><a href="sidebar-left.html">Sidebar Left</a></li>
-								<li><a href="sidebar-right.html">Sidebar Right</a></li>
-							</ul>
-						</aside>
-					</div>
-			      	<div class="line-column line3">
-				        <aside class="widget">
-							<h3 class="line-title">Social</h3>
-							<ul>
-								<li><a href="https://www.facebook.com/imperugo" target="_blank">Facebook</a></li>
-								<li><a href="http://twitter.com/imperugo" target="_blank">Twitter</a></li>
-								<li><a href="https://www.linkedin.com/in/imperugo" target="_blank">Linkedin</a></li>
-								<li><a href="https://plus.google.com/+UgoLattanzi/" target="_blank">Google+</a></li>
-								<li><a href="https://github.com/imperugo" target="_blank">Github</a></li>
-								<li><a href="https://vimeo.com/imperugo" target="_blank">Vimeo</a></li>
-								<li><a href="https://foursquare.com/imperugo" target="_blank">Foursquare</a></li>
-							</ul>
-						</aside>
-					</div>
-					<div class="line-column line3">
-						<aside class="widget">
-							<h3 class="line-title">Portfolio Pages</h3>
-							<ul>
-								<li><a href="portfolio-bg.html">Portfolio Background</a></li>
-								<li><a href="portfolio-ajax.html">Portfolio Masonry Ajax</a></li>
-								<li><a href="portfolio-ajax-sidebar.html">Portfolio Ajax With Sidebar</a></li>
-								<li><a href="portfolio-grid.html">Portfolio Grid</a></li>
-								<li><a href="portfolio-grid-sidebar.html">Portfolio Grid With Sidebar</a></li>
-								<li><a href="portfolio-single.html">Single</a></li>
-								<li><a href="portfolio-single-sidebar.html">Single With Sidebar</a></li>
-							</ul>
-						</aside>
-					</div>
-					<div class="line-column line3">
-						<aside class="widget">
-							<h3 class="line-title">Blog Pages</h3>
-							<ul>
-								<li><a href="blog-grid.html">Blog Grid</a></li>
-								<li><a href="blog-grid-sidebar.html">Blog Grid With Sidebar</a></li>
-								<li><a href="blog-large.html">Blog Large Image</a></li>
-								<li><a href="blog-medium.html">Blog Medium Image</a></li>
-								<li><a href="blog-single.html">Single</a></li>
-							</ul>
-						</aside>
-					</div>
-		    	</div>
-			</div>
-			<!--end line-content-top-->
+<div id="line-page-body">
+    <div class="line-container">
+        <div class="line-page-content">
 
-        	<div id="line-page-body">
-        		<div class="line-container">
-        			<div class="line-page-content">
+            <div class="line-full line-overflow-x">
+                <div class="line-middle line-hello">
+                    <h3 class="line-title-1" data-scrollreveal="enter top over 0.5s after 0.3s">Personal Website</h3>
+                    <h1 class="line-title" data-scrollreveal="enter top over 0.5s after 0.5s">Ugo Lattanzi</h1>
+                    <h3 class="line-color-light" data-scrollreveal="enter top over 0.5s after 0.7s">
+                        Microsoft MVP. Father. Snowboarder. All round nice guy
+                    </h3>
+                    <div class="line-elements none-in-mobile" data-scrollreveal="enter top over 0.5s after 0.9s">
+                        <a href="#line-features" class="line-reveal line-btn big">Skills</a>
+                        <a href="#slider-portfolio" class="line-reveal line-btn big orange">Portfolio</a>
+                    </div>
+                </div>
+                <div class="line-blur">
+                    <div class="line-item-height line-blur-img line-parallax bg1" data-speed="4" data-type="background"></div>
 
-        				<div class="line-full line-overflow-x">
-        					<div class="line-middle line-hello">
-        						<h3 class="line-title-1" data-scrollreveal="enter top over 0.5s after 0.3s">Personal Website</h3>
-        						<h1 class="line-title" data-scrollreveal="enter top over 0.5s after 0.5s">Ugo Lattanzi</h1>
-        						<h3 class="line-color-light" data-scrollreveal="enter top over 0.5s after 0.7s">
-        							Microsoft MVP. Father. Snowboarder. All round nice guy
-        						</h3>
-        						<div class="line-elements none-in-mobile" data-scrollreveal="enter top over 0.5s after 0.9s">
-        							<a href="#line-features" class="line-reveal line-btn big">Skills</a>
-        							<a href="#slider-portfolio" class="line-reveal line-btn big orange" >Portfolio</a>
-        						</div>
-        					</div>
-        					<div class="line-blur">
-	        					<div class="line-item-height line-blur-img line-parallax bg1" data-speed="4" data-type="background"></div>
+                    <div class="line-item-height line-blur-img line-blur-active line-parallax bg2" data-speed="4" data-type="background">
+                    </div>
+                </div>
+            </div>
 
-	        					<div class="line-item-height line-blur-img line-blur-active line-parallax bg2" data-speed="4" data-type="background">
-	        					</div>
-	        				</div>
-        				</div>
+            <div id="line-features" class="line-features line-row line-section">
+                <div class="line-wrap">
+                    <div class="line-center line-mb70">
+                        <h2 class="line-title-2">Skills</h2>
+                        <p>Everything around web development.</p>
+                    </div>
+                    <div class="one-half">
+                        <div class="line-content-icon">
+                            <div class="line-icon">
+                                <img data-scrollreveal="enter bottom over 0.5s after 0.3s" src="assets/img/sample/icons/settings.svg" alt="img">
+                            </div>
+                            <div class="line-icon-entry">
+                                <div class="line-icon-entry-wrap">
+                                    <h4>Easy to customize</h4>
+                                    <p>With user-friendly backend and extraordinary user experience, you will easily to customize the theme with no sweat.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-content-icon">
+                            <div class="line-icon">
+                                <img data-scrollreveal="enter bottom over 0.5s after 0.7s" src="assets/img/sample/icons/news.svg" alt="img">
+                            </div>
+                            <div class="line-icon-entry">
+                                <div class="line-icon-entry-wrap">
+                                    <h4>Documentation & Support</h4>
+                                    <p>Along with the great features,
+                                        <strong>Galaxy</strong>is also equipped with the comprehensive documentation and helpful customer support.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one-half last">
+                        <div class="line-content-icon">
+                            <div class="line-icon">
+                                <img data-scrollreveal="enter bottom over 0.5s after 0.5s" src="assets/img/sample/icons/params.svg" alt="img">
+                            </div>
+                            <div class="line-icon-entry">
+                                <div class="line-icon-entry-wrap">
+                                    <h4>Build your own layouts</h4>
+                                    <p>
+                                        <strong>Galaxy</strong>provides to the users a large choice of customization because it owns the blissful layout options that are highly adaptable.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="line-content-icon">
+                            <div class="line-icon">
+                                <img data-scrollreveal="enter bottom over 0.5s after 0.9s" src="assets/img/sample/icons/star.svg" alt="img">
+                            </div>
+                            <div class="line-icon-entry">
+                                <div class="line-icon-entry-wrap">
+                                    <h4>Innovative Design</h4>
+                                    <p>This theme beautifully delivers one of the most innovative design, which are both groundbreaking and up-to-date with the latest trend in the market.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        				<div id="line-features" class="line-features line-row line-section">
-        					<div class="line-wrap">
-        						<div class="line-center line-mb70">
-        							<h2 class="line-title-2">Skills</h2>
-        							<p>Everything around web development.</p>
-        						</div>
-        						<div class="one-half">
-        							<div class="line-content-icon">
-        								<div class="line-icon">
-        									<img data-scrollreveal="enter bottom over 0.5s after 0.3s" src="assets/img/sample/icons/settings.svg" alt="img">
-        								</div>
-        								<div class="line-icon-entry">
-        									<div class="line-icon-entry-wrap">
-	        									<h4>Easy to customize</h4>
-	        									<p>With user-friendly backend and extraordinary user experience, you will easily to customize the theme with no sweat. </p>
-	        								</div>
-        								</div>
-        							</div>
-        							<div class="line-content-icon">
-        								<div class="line-icon">
-        									<img data-scrollreveal="enter bottom over 0.5s after 0.7s"  src="assets/img/sample/icons/news.svg" alt="img">
-        								</div>
-        								<div class="line-icon-entry">
-        									<div class="line-icon-entry-wrap">
-	        									<h4>Documentation & Support</h4>
-	        									<p>Along with the great features, <strong>Galaxy</strong> is also equipped with the comprehensive documentation and helpful customer support. </p>
-	        								</div>
-        								</div>
-        							</div>
-        						</div>
-        						<div class="one-half last">
-        							<div class="line-content-icon">
-        								<div class="line-icon">
-        									<img data-scrollreveal="enter bottom over 0.5s after 0.5s"  src="assets/img/sample/icons/params.svg" alt="img">
-        								</div>
-        								<div class="line-icon-entry">
-        									<div class="line-icon-entry-wrap">
-	        									<h4>Build your own layouts</h4>
-	        									<p><strong>Galaxy</strong> provides to the users a large choice of customization because it owns the blissful layout options that are highly adaptable. </p>
-	        								</div>
-        								</div>
-        							</div>
-        							<div class="line-content-icon">
-        								<div class="line-icon">
-        									<img data-scrollreveal="enter bottom over 0.5s after 0.9s"  src="assets/img/sample/icons/star.svg" alt="img">
-        								</div>
-        								<div class="line-icon-entry">
-        									<div class="line-icon-entry-wrap">
-	        									<h4>Innovative Design</h4>
-	        									<p>This theme beautifully delivers one of the most innovative design, which are both groundbreaking and up-to-date with the latest trend in the market.</p>
-	        								</div>
-        								</div>
-        							</div>
-        						</div>
-        					</div>
-        				</div>
+            <div id="slider-portfolio" class="slider-portfolio line-full line-center flexslider">
+                <ul class="slides">
+                    <li class="line-cover line-item-height line-parallax bg3">
+                        <div class="line-middle">
+                            <h2 class="line-title line-color-light" data-scrollreveal="enter top over 0.3s after 0.5s">
+                                Portfolio Layout Full Background
+                            </h2>
+                            <div class="line-elements" data-scrollreveal="enter bottom over 0.5s after 0.5s">
+                                <a href="portfolio-bg.html" class="line-btn big white" target="_blank">View Layout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="line-cover line-item-height line-parallax bg4">
+                        <div class="line-middle">
+                            <h2 class="line-title" data-scrollreveal="enter top over 0.3s after 0.5s">
+                                Portfolio Layout Grid
+                            </h2>
+                            <div class="line-elements" data-scrollreveal="enter bottom over 0.5s after 0.5s">
+                                <a href="portfolio-grid.html" class="line-btn big dark" target="_blank">View Layout</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="line-cover line-item-height line-parallax bg5">
+                        <div class="line-middle">
+                            <h2 class="line-title line-color-light" data-scrollreveal="enter top over 0.3s after 0.5s">
+                                Portfolio Layout Masonry Ajax
+                            </h2>
+                            <div class="line-elements" data-scrollreveal="enter bottom over 0.5s after 0.5s">
+                                <a href="portfolio-ajax.html" class="line-btn big white" target="_blank">View Layout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
 
-        				<div id="slider-portfolio" class="slider-portfolio line-full line-center flexslider">
-    						<ul class="slides">
-								<li class="line-cover line-item-height line-parallax bg3">
-									<div class="line-middle">
-		        						<h2 class="line-title line-color-light" data-scrollreveal="enter top over 0.3s after 0.5s">
-		        							Portfolio Layout Full Background
-		        						</h2>
-		        						<div class="line-elements" data-scrollreveal="enter bottom over 0.5s after 0.5s">
-		        							<a href="portfolio-bg.html" class="line-btn big white" target="_blank">View Layout</a>
-		        						</div>
-		        					</div>
-								</li>
-								<li class="line-cover line-item-height line-parallax bg4">
-									<div class="line-middle">
-		        						<h2 class="line-title" data-scrollreveal="enter top over 0.3s after 0.5s">
-		        							Portfolio Layout Grid
-		        						</h2>
-		        						<div class="line-elements" data-scrollreveal="enter bottom over 0.5s after 0.5s">
-		        							<a href="portfolio-grid.html" class="line-btn big dark" target="_blank">View Layout</a>
-		        						</div>
-		        					</div>
-								</li>
-								<li class="line-cover line-item-height line-parallax bg5">
-									<div class="line-middle">
-		        						<h2 class="line-title line-color-light" data-scrollreveal="enter top over 0.3s after 0.5s">
-		        							Portfolio Layout Masonry Ajax
-		        						</h2>
-		        						<div class="line-elements" data-scrollreveal="enter bottom over 0.5s after 0.5s">
-		        							<a href="portfolio-ajax.html" class="line-btn big white" target="_blank">View Layout</a>
-		        						</div>
-		        					</div>
-								</li>
-							</ul>
-        				</div>
+            <div class="line-row line-section">
+                <div class="line-wrap">
+                    <div class="line-center line-mb70">
+                        <h2 class="line-title-2">PORTFOLIO</h2>
+                        <p>Some project where I did the difference</p>
+                    </div>
+                    <div class="one-third">
+                        <p>
+                            <img data-scrollreveal="enter top over 0.5s after 0.3s" src="assets/img/sample/icons/1.svg" alt="img">
+                        </p>
+                        <h4>Masonry Layout</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                    </div>
+                    <div class="one-third">
+                        <p>
+                            <img data-scrollreveal="enter top over 0.5s after 0.5s" src="assets/img/sample/icons/2.svg" alt="img">
+                        </p>
+                        <h4>Grid Layout</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                    </div>
+                    <div class="one-third last">
+                        <p>
+                            <img data-scrollreveal="enter top over 0.5s after 0.7s" src="assets/img/sample/icons/3.svg" alt="img">
+                        </p>
+                        <h4>Fullwidth Background layout</h4>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
+                    </div>
 
-        				<div class="line-row line-section">
-        					<div class="line-wrap">
-        						<div class="line-center line-mb70">
-        							<h2 class="line-title-2">PORTFOLIO</h2>
-        							<p>Some project where I did the difference</p>
-        						</div>
-        						<div class="one-third">
-        							<p><img data-scrollreveal="enter top over 0.5s after 0.3s"  src="assets/img/sample/icons/1.svg" alt="img"></p>
-        							<h4>Masonry Layout</h4>
-	        						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
-        						</div>
-        						<div class="one-third">
-        							<p><img data-scrollreveal="enter top over 0.5s after 0.5s"  src="assets/img/sample/icons/2.svg" alt="img"></p>
-        							<h4>Grid Layout</h4>
-	        						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
-        						</div>
-        						<div class="one-third last">
-        							<p><img data-scrollreveal="enter top over 0.5s after 0.7s"  src="assets/img/sample/icons/3.svg" alt="img"></p>
-        							<h4>Fullwidth Background layout</h4>
-	        						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
-        						</div>
+                    <div class="line-portfolio line-portfolio-ajax line-clear line-section">
 
-        						<div class="line-portfolio line-portfolio-ajax line-clear line-section">
+                        <div id="line-load-ajax" class="line-load-ajax"></div>
 
-									<div id="line-load-ajax" class="line-load-ajax"></div>
+                        <ul class="line-filter">
+                            <li>
+                                <a data-filter="*" href="" class="selected">All</a>
+                            </li>
+                            <li>
+                                <a data-filter=".cat1" href="">Branding</a>
+                            </li>
+                            <li>
+                                <a data-filter=".cat2" href="">Marketing</a>
+                            </li>
+                            <li>
+                                <a data-filter=".cat3" href="">Media</a>
+                            </li>
+                            <li>
+                                <a data-filter=".cat4" href="">Photography</a>
+                            </li>
+                            <li>
+                                <a data-filter=".cat5" href="">Print</a>
+                            </li>
+                            <li>
+                                <a data-filter=".cat6" href="">Web Design</a>
+                            </li>
+                        </ul>
 
-									<ul class="line-filter">
-										<li>
-											<a data-filter="*" href="" class="selected">All</a>
-										</li>
-										<li>
-											<a data-filter=".cat1" href="">Branding</a>
-										</li>
-										<li>
-											<a data-filter=".cat2" href="">Marketing</a>
-										</li>
-										<li>
-											<a data-filter=".cat3" href="">Media</a>
-										</li>
-										<li>
-											<a data-filter=".cat4" href="">Photography</a>
-										</li>
-										<li>
-											<a data-filter=".cat5" href="">Print</a>
-										</li>
-										<li>
-											<a data-filter=".cat6" href="">Web Design</a>
-										</li>
-									</ul>
-
-									<div class="line-content line-content-isotope line-list-article line-col-3">
-										<article class="cat1 cat4 cat5 cat6 entry">
-											<a href="/projects/mtvit/index.html" class="line-thumb">
-												<img src="/projects/mtvit/poster.png" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													<a href="/projects/mtvit/index.html" class="line-thumb">
+                        <div class="line-content line-content-isotope line-list-article line-col-3">
+                            <article class="cat1 cat4 cat5 cat6 entry">
+                                <a href="/projects/mtvit/index.html" class="line-thumb">
+                                    <img src="/projects/mtvit/poster.png" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        <a href="/projects/mtvit/index.html" class="line-thumb">
 														MTV Italy Website
 													</a>
-												</h4>
-												<div class="incategory">
-													Website, .net, java
-												</div>
-											</div>
-										</article>
-										<article class="cat1 cat2 cat4 cat3 entry">
-											<a href="pages/portfolio-single-2.html" class="line-thumb">
-												<img src="http://placehold.it/313x487" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													Project title
-												</h4>
-												<div class="incategory">
-													<a href="#">Media</a>,
-													<a href="#">Photography</a>,
-													<a href="#">Web Design</a>
-												</div>
-											</div>
-										</article>
-										<article class="cat2 cat1 cat6 cat3 cat5 entry">
-											<a href="pages/portfolio-single-3.html" class="line-thumb">
-												<img src="http://placehold.it/313x405" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													Project title
-												</h4>
-												<div class="incategory">
-													<a href="#">Media</a>,
-													<a href="#">Photography</a>,
-													<a href="#">Web Design</a>
-												</div>
-											</div>
-										</article>
-										<article class="cat5 cat4 cat6 cat2 entry">
-											<a href="pages/portfolio-single-1.html" class="line-thumb">
-												<img src="http://placehold.it/313x429" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													Project title
-												</h4>
-												<div class="incategory">
-													<a href="#">Media</a>,
-													<a href="#">Photography</a>,
-													<a href="#">Web Design</a>
-												</div>
-											</div>
-										</article>
-										<article class="cat5 cat2 cat3 cat6 cat4 entry">
-											<a href="pages/portfolio-single-2.html" class="line-thumb">
-												<img src="http://placehold.it/313x580" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													Project title
-												</h4>
-												<div class="incategory">
-													<a href="#">Media</a>,
-													<a href="#">Photography</a>,
-													<a href="#">Web Design</a>
-												</div>
-											</div>
-										</article>
-										<article class="cat5 cat5 cat6 cat1 entry">
-											<a href="pages/portfolio-single-3.html" class="line-thumb">
-												<img src="http://placehold.it/313x368" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													Project title
-												</h4>
-												<div class="incategory">
-													<a href="#">Media</a>,
-													<a href="#">Photography</a>,
-													<a href="#">Web Design</a>
-												</div>
-											</div>
-										</article>
-										<article class="cat5 cat1 cat2 cat3 entry">
-											<a href="pages/portfolio-single-1.html" class="line-thumb">
-												<img src="http://placehold.it/313x558" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													Project title
-												</h4>
-												<div class="incategory">
-													<a href="#">Media</a>,
-													<a href="#">Photography</a>,
-													<a href="#">Web Design</a>
-												</div>
-											</div>
-										</article>
-										<article class="cat1 cat2 cat4 entry">
-											<a href="pages/portfolio-single-2.html" class="line-thumb">
-												<img src="http://placehold.it/313x445" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													Project title
-												</h4>
-												<div class="incategory">
-													<a href="#">Media</a>,
-													<a href="#">Photography</a>,
-													<a href="#">Web Design</a>
-												</div>
-											</div>
-										</article>
-										<article class="cat1 cat2 cat4 entry">
-											<a href="pages/portfolio-single-3.html" class="line-thumb">
-												<img src="http://placehold.it/313x315" alt="img">
-											</a>
-											<div class="line-article-content line-middle">
-												<h4 class="line-title">
-													Project title
-												</h4>
-												<div class="incategory">
-													<a href="#">Media</a>,
-													<a href="#">Photography</a>,
-													<a href="#">Web Design</a>
-												</div>
-											</div>
-										</article>
-									</div>
+                                    </h4>
+                                    <div class="incategory">
+                                        Website, .net, java
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="cat1 cat2 cat4 cat3 entry">
+                                <a href="pages/portfolio-single-2.html" class="line-thumb">
+                                    <img src="http://placehold.it/313x487" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        Project title
+                                    </h4>
+                                    <div class="incategory">
+                                        <a href="#">Media</a>,
+                                        <a href="#">Photography</a>,
+                                        <a href="#">Web Design</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="cat2 cat1 cat6 cat3 cat5 entry">
+                                <a href="pages/portfolio-single-3.html" class="line-thumb">
+                                    <img src="http://placehold.it/313x405" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        Project title
+                                    </h4>
+                                    <div class="incategory">
+                                        <a href="#">Media</a>,
+                                        <a href="#">Photography</a>,
+                                        <a href="#">Web Design</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="cat5 cat4 cat6 cat2 entry">
+                                <a href="pages/portfolio-single-1.html" class="line-thumb">
+                                    <img src="http://placehold.it/313x429" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        Project title
+                                    </h4>
+                                    <div class="incategory">
+                                        <a href="#">Media</a>,
+                                        <a href="#">Photography</a>,
+                                        <a href="#">Web Design</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="cat5 cat2 cat3 cat6 cat4 entry">
+                                <a href="pages/portfolio-single-2.html" class="line-thumb">
+                                    <img src="http://placehold.it/313x580" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        Project title
+                                    </h4>
+                                    <div class="incategory">
+                                        <a href="#">Media</a>,
+                                        <a href="#">Photography</a>,
+                                        <a href="#">Web Design</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="cat5 cat5 cat6 cat1 entry">
+                                <a href="pages/portfolio-single-3.html" class="line-thumb">
+                                    <img src="http://placehold.it/313x368" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        Project title
+                                    </h4>
+                                    <div class="incategory">
+                                        <a href="#">Media</a>,
+                                        <a href="#">Photography</a>,
+                                        <a href="#">Web Design</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="cat5 cat1 cat2 cat3 entry">
+                                <a href="pages/portfolio-single-1.html" class="line-thumb">
+                                    <img src="http://placehold.it/313x558" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        Project title
+                                    </h4>
+                                    <div class="incategory">
+                                        <a href="#">Media</a>,
+                                        <a href="#">Photography</a>,
+                                        <a href="#">Web Design</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="cat1 cat2 cat4 entry">
+                                <a href="pages/portfolio-single-2.html" class="line-thumb">
+                                    <img src="http://placehold.it/313x445" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        Project title
+                                    </h4>
+                                    <div class="incategory">
+                                        <a href="#">Media</a>,
+                                        <a href="#">Photography</a>,
+                                        <a href="#">Web Design</a>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="cat1 cat2 cat4 entry">
+                                <a href="pages/portfolio-single-3.html" class="line-thumb">
+                                    <img src="http://placehold.it/313x315" alt="img">
+                                </a>
+                                <div class="line-article-content line-middle">
+                                    <h4 class="line-title">
+                                        Project title
+                                    </h4>
+                                    <div class="incategory">
+                                        <a href="#">Media</a>,
+                                        <a href="#">Photography</a>,
+                                        <a href="#">Web Design</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
 
-									<hr>
+                        <hr>
 
-									<div class="line-funfact line-center" data-waypoint-enabled="yes">
-										<div class="one-fourth">
-											<p>
-												<img data-scrollreveal="enter top over 0.5s after 0.3s" src="assets/img/sample/icons/cup.svg" alt="img">
-											</p>
-											<div class="line-title">
-												<span class="line-count-numb" data-to="1280" data-speed="3000"></span>
-											</div>
-											<h5>Cups of coffee</h5>
-										</div>
-										<div class="one-fourth">
-											<p>
-												<img data-scrollreveal="enter top over 0.5s after 0.5s" src="assets/img/sample/icons/like.svg" alt="img">
-											</p>
-											<div class="line-title">
-												<span class="line-count-numb" data-to="256" data-speed="3000"></span>
-											</div>
-											<h5>Client Feedbacks</h5>
-										</div>
-										<div class="one-fourth">
-											<p>
-												<img data-scrollreveal="enter top over 0.5s after 0.7s" src="assets/img/sample/icons/paperplane.svg" alt="img">
-											</p>
-											<div class="line-title">
-												<span class="line-count-numb" data-to="1988" data-speed="3000"></span>
-											</div>
-											<h5>Projects Launched</h5>
-										</div>
-										<div class="one-fourth last">
-											<p>
-												<img data-scrollreveal="enter top over 0.5s after 0.9s" src="assets/img/sample/icons/shop.svg" alt="img">
-											</p>
-											<div class="line-title">
-												<span class="line-count-numb" data-to="07" data-speed="3000"></span>
-											</div>
-											<h5>Offices Worldwide</h5>
-										</div>
-									</div>
-								</div>
-        					</div>
-        				</div>
+                        <div class="line-funfact line-center" data-waypoint-enabled="yes">
+                            <div class="one-fourth">
+                                <p>
+                                    <img data-scrollreveal="enter top over 0.5s after 0.3s" src="assets/img/sample/icons/cup.svg" alt="img">
+                                </p>
+                                <div class="line-title">
+                                    <span class="line-count-numb" data-to="1280" data-speed="3000"></span>
+                                </div>
+                                <h5>Cups of coffee</h5>
+                            </div>
+                            <div class="one-fourth">
+                                <p>
+                                    <img data-scrollreveal="enter top over 0.5s after 0.5s" src="assets/img/sample/icons/like.svg" alt="img">
+                                </p>
+                                <div class="line-title">
+                                    <span class="line-count-numb" data-to="256" data-speed="3000"></span>
+                                </div>
+                                <h5>Client Feedbacks</h5>
+                            </div>
+                            <div class="one-fourth">
+                                <p>
+                                    <img data-scrollreveal="enter top over 0.5s after 0.7s" src="assets/img/sample/icons/paperplane.svg" alt="img">
+                                </p>
+                                <div class="line-title">
+                                    <span class="line-count-numb" data-to="1988" data-speed="3000"></span>
+                                </div>
+                                <h5>Projects Launched</h5>
+                            </div>
+                            <div class="one-fourth last">
+                                <p>
+                                    <img data-scrollreveal="enter top over 0.5s after 0.9s" src="assets/img/sample/icons/shop.svg" alt="img">
+                                </p>
+                                <div class="line-title">
+                                    <span class="line-count-numb" data-to="07" data-speed="3000"></span>
+                                </div>
+                                <h5>Offices Worldwide</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        				<div class="line-row line-center line-cover line-section bg6">
-        					<div class="line-wrap">
-        						<div class="line-tw-feed">
-	        						<div class="line-icons">
-										<i class="fa fa-twitter"></i>
-									</div>
-									<div class="line-carousel-one">
-										<ul class="slides">
-											<li class="line-carousel-item">
-												<div class="line-carousel-item-inner">
-													<p>
-														<a href="#">@Calavera_Kid</a> Lorem Ipsum is simply dummy text of the printing.
-													</p>
-													<a href="#" class="twitter_time">8 hours ago</a>
-												</div>
-											</li>
-											<li class="line-carousel-item">
-												<div class="line-carousel-item-inner">
-													<p>
-														<a href="#">@ModernTribeInc</a> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-													</p>
-													<a href="#" class="twitter_time">yesterday</a>
-												</div>
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-        				</div>
+            <div class="line-row line-center line-cover line-section bg6">
+                <div class="line-wrap">
+                    <div class="line-tw-feed">
+                        <div class="line-icons">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        <div class="line-carousel-one">
+                            <ul class="slides">
+                                <li class="line-carousel-item">
+                                    <div class="line-carousel-item-inner">
+                                        <p>
+                                            <a href="#">@Calavera_Kid</a> Lorem Ipsum is simply dummy text of the printing.
+                                        </p>
+                                        <a href="#" class="twitter_time">8 hours ago</a>
+                                    </div>
+                                </li>
+                                <li class="line-carousel-item">
+                                    <div class="line-carousel-item-inner">
+                                        <p>
+                                            <a href="#">@ModernTribeInc</a> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                        <a href="#" class="twitter_time">yesterday</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-        				<div class="line-row">
-        					<div class="line-wrap">
-        						<div class="line-mb70 line-mt100">
-        							<h2 class="line-title-2 fix-left">LATEST BLOG</h2>
-        							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-        						</div>
-        						<div class="line-post-content line-blog line-blog-grid line-col-3">
-        							<article class="entry">
-										<div class="line-thumb">
-											<a href="blog-single.html">
-												<img src="http://placehold.it/300x200" alt="img">
-											</a>
-										</div>
-										<div class="line-entry-wrap">
-											<div class="line-entry-header">
-												<div class="line-time">23 Jan 2014</div>
-												<h3 class="line-title">
-													<a href="blog-single.html">Perfect Sunday Morning Ride </a>
-												</h3>
-											</div>
-											<div class="line-entry-footer">
-												<div class="line-meta">
-													Post by <a href="#">admin</a> in
-													<a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
-												</div>
-											</div>
-										</div>
-									</article>
-									<article class="entry">
-										<div class="line-thumb">
-											<a href="blog-single.html">
-												<img src="http://placehold.it/300x200" alt="img">
-											</a>
-										</div>
-										<div class="line-entry-wrap">
-											<div class="line-entry-header">
-												<div class="line-time">23 Jan 2014</div>
-												<h3 class="line-title">
-													<a href="blog-single.html">Perfect Sunday Morning Ride </a>
-												</h3>
-											</div>
-											<div class="line-entry-footer">
-												<div class="line-meta">
-													Post by <a href="#">admin</a> in
-													<a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
-												</div>
-											</div>
-										</div>
-									</article>
-									<article class="entry">
-										<div class="line-thumb">
-											<a href="blog-single.html">
-												<img src="http://placehold.it/300x200" alt="img">
-											</a>
-										</div>
-										<div class="line-entry-wrap">
-											<div class="line-entry-header">
-												<div class="line-time">23 Jan 2014</div>
-												<h3 class="line-title">
-													<a href="blog-single.html">Perfect Sunday Morning Ride </a>
-												</h3>
-											</div>
-											<div class="line-entry-footer">
-												<div class="line-meta">
-													Post by <a href="#">admin</a> in
-													<a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
-												</div>
-											</div>
-										</div>
-									</article>
-									<article class="entry">
-										<div class="line-thumb">
-											<a href="blog-single.html">
-												<img src="http://placehold.it/300x200" alt="img">
-											</a>
-										</div>
-										<div class="line-entry-wrap">
-											<div class="line-entry-header">
-												<div class="line-time">23 Jan 2014</div>
-												<h3 class="line-title">
-													<a href="blog-single.html">Perfect Sunday Morning Ride </a>
-												</h3>
-											</div>
-											<div class="line-entry-footer">
-												<div class="line-meta">
-													Post by <a href="#">admin</a> in
-													<a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
-												</div>
-											</div>
-										</div>
-									</article>
-									<article class="entry">
-										<div class="line-thumb">
-											<a href="blog-single.html">
-												<img src="http://placehold.it/300x200" alt="img">
-											</a>
-										</div>
-										<div class="line-entry-wrap">
-											<div class="line-entry-header">
-												<div class="line-time">23 Jan 2014</div>
-												<h3 class="line-title">
-													<a href="blog-single.html">Perfect Sunday Morning Ride </a>
-												</h3>
-											</div>
-											<div class="line-entry-footer">
-												<div class="line-meta">
-													Post by <a href="#">admin</a> in
-													<a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
-												</div>
-											</div>
-										</div>
-									</article>
-									<article class="entry">
-										<div class="line-thumb">
-											<a href="blog-single.html">
-												<img src="http://placehold.it/300x200" alt="img">
-											</a>
-										</div>
-										<div class="line-entry-wrap">
-											<div class="line-entry-header">
-												<div class="line-time">23 Jan 2014</div>
-												<h3 class="line-title">
-													<a href="blog-single.html">Perfect Sunday Morning Ride </a>
-												</h3>
-											</div>
-											<div class="line-entry-footer">
-												<div class="line-meta">
-													Post by <a href="#">admin</a> in
-													<a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
-												</div>
-											</div>
-										</div>
-									</article>
-        						</div>
-        					</div>
-        				</div>
+            <div class="line-row">
+                <div class="line-wrap">
+                    <div class="line-mb70 line-mt100">
+                        <h2 class="line-title-2 fix-left">LATEST BLOG</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="line-post-content line-blog line-blog-grid line-col-3">
+                        <article class="entry">
+                            <div class="line-thumb">
+                                <a href="blog-single.html">
+                                    <img src="http://placehold.it/300x200" alt="img">
+                                </a>
+                            </div>
+                            <div class="line-entry-wrap">
+                                <div class="line-entry-header">
+                                    <div class="line-time">23 Jan 2014</div>
+                                    <h3 class="line-title">
+                                        <a href="blog-single.html">Perfect Sunday Morning Ride </a>
+                                    </h3>
+                                </div>
+                                <div class="line-entry-footer">
+                                    <div class="line-meta">
+                                        Post by <a href="#">admin</a> in
+                                        <a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="entry">
+                            <div class="line-thumb">
+                                <a href="blog-single.html">
+                                    <img src="http://placehold.it/300x200" alt="img">
+                                </a>
+                            </div>
+                            <div class="line-entry-wrap">
+                                <div class="line-entry-header">
+                                    <div class="line-time">23 Jan 2014</div>
+                                    <h3 class="line-title">
+                                        <a href="blog-single.html">Perfect Sunday Morning Ride </a>
+                                    </h3>
+                                </div>
+                                <div class="line-entry-footer">
+                                    <div class="line-meta">
+                                        Post by <a href="#">admin</a> in
+                                        <a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="entry">
+                            <div class="line-thumb">
+                                <a href="blog-single.html">
+                                    <img src="http://placehold.it/300x200" alt="img">
+                                </a>
+                            </div>
+                            <div class="line-entry-wrap">
+                                <div class="line-entry-header">
+                                    <div class="line-time">23 Jan 2014</div>
+                                    <h3 class="line-title">
+                                        <a href="blog-single.html">Perfect Sunday Morning Ride </a>
+                                    </h3>
+                                </div>
+                                <div class="line-entry-footer">
+                                    <div class="line-meta">
+                                        Post by <a href="#">admin</a> in
+                                        <a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="entry">
+                            <div class="line-thumb">
+                                <a href="blog-single.html">
+                                    <img src="http://placehold.it/300x200" alt="img">
+                                </a>
+                            </div>
+                            <div class="line-entry-wrap">
+                                <div class="line-entry-header">
+                                    <div class="line-time">23 Jan 2014</div>
+                                    <h3 class="line-title">
+                                        <a href="blog-single.html">Perfect Sunday Morning Ride </a>
+                                    </h3>
+                                </div>
+                                <div class="line-entry-footer">
+                                    <div class="line-meta">
+                                        Post by <a href="#">admin</a> in
+                                        <a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="entry">
+                            <div class="line-thumb">
+                                <a href="blog-single.html">
+                                    <img src="http://placehold.it/300x200" alt="img">
+                                </a>
+                            </div>
+                            <div class="line-entry-wrap">
+                                <div class="line-entry-header">
+                                    <div class="line-time">23 Jan 2014</div>
+                                    <h3 class="line-title">
+                                        <a href="blog-single.html">Perfect Sunday Morning Ride </a>
+                                    </h3>
+                                </div>
+                                <div class="line-entry-footer">
+                                    <div class="line-meta">
+                                        Post by <a href="#">admin</a> in
+                                        <a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="entry">
+                            <div class="line-thumb">
+                                <a href="blog-single.html">
+                                    <img src="http://placehold.it/300x200" alt="img">
+                                </a>
+                            </div>
+                            <div class="line-entry-wrap">
+                                <div class="line-entry-header">
+                                    <div class="line-time">23 Jan 2014</div>
+                                    <h3 class="line-title">
+                                        <a href="blog-single.html">Perfect Sunday Morning Ride </a>
+                                    </h3>
+                                </div>
+                                <div class="line-entry-footer">
+                                    <div class="line-meta">
+                                        Post by <a href="#">admin</a> in
+                                        <a href="#">Wordpress</a>, <a href="#">HTML/CSS</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
 
-        			</div>
-        			<!--end line-page-content-->
-        		</div>
-        	</div>
-        	<!--end line-page-body-->
-
-        	<div id="line-content-bottom" class="bg7 line-cover line-bg-dark">
-				<div class="line-wrap line-sidebar-bottom">
-					<div class="line-column line6">
-						<aside class="widget widget_text">
-							<div class="textwidget">
-								<p>
-									<img src="assets/img/logo.svg" alt="img">
-								</p>
-								<p>
-									<strong>Address:</strong> Milan, 20100, Italy<br>
-									<strong>Phone:</strong> +393292936833<br>
-									<strong>Email:</strong> imperugo@gmail.com<br>
-								</p>
-							</div>
-						</aside>
-					</div>
-					<div class="line-column line2">
-						<aside class="widget">
-							<h3 class="line-title">Blogs</h3>
-							<ul>
-								<li><a href="http://tostring.it">English</a></li>
-								<li><a href="http://imperugo.tostring.it">Italian</a></li>
-							</ul>
-						</aside>
-					</div>
-					<div class="line-column line2">
-						<aside class="widget">
-							<h3 class="line-title">Network</h3>
-							<ul>
-								<li><a href="https://www.facebook.com/imperugo" target="_blank" >Facebook</a></li>
-								<li><a href="https://twitter.com/imperugo" target="_blank">Twitter</a></li>
-								<li><a href="https://www.linkedin.com/in/imperugo" target="_blank">Linkedin</a></li>
-								<li><a href="https://github.com/imperugo" target="_blank">Github</a></li>
-							</ul>
-						</aside>
-					</div>
-					<div class="line-column line2">
-						<aside class="widget">
-							<h3 class="line-title">Support</h3>
-							<ul>
-								<li><a href="#">Documentation</a></li>
-								<li><a href="#">Support FAQ</a></li>
-								<li><a href="#">Help Desk</a></li>
-								<li><a href="#">Video</a></li>
-							</ul>
-						</aside>
-					</div>
-				</div>
-			</div>
-			<!--end line-content-bottom-->
-
-			<footer id="line-footer">
-				<div class="line-wrap line-center">
-					<div class="line-social">
-						<a class="line-icon-facebook" href="#">
-							<i class="fa fa-facebook"></i>
-						</a>
-						<a class="line-icon-twitter" href="#">
-							<i class="fa fa-twitter"></i>
-						</a>
-						<a class="line-icon-dribbble" href="#">
-							<i class="fa fa-dribbble"></i>
-						</a>
-						<a class="line-icon-instagram" href="#">
-							<i class="fa fa-instagram"></i>
-						</a>
-					</div>
-					<div class="line-copyright">
-						Copyright © 2014 <a href="http://linethemes.com/" target="_blank">LineThemes</a> !. All Rights Reserved. Designed by <a href="http://linethemes.com/" target="_blank">LineThemes.com</a>
-					</div>
-				</div>
-			</footer>
-			<!--end Footer-->
-
-			<a href="#" id="line-gotop">
-				<i class="fa fa-chevron-up"></i>
-			</a>
         </div>
-        <!--end line-wrapper-->
+        <!--end line-page-content-->
+    </div>
+</div>
+<!--end line-page-body-->
 
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-core.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-ui.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-isotope.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-flexslider.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-validate.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-countTo.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-countdown.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-waypoints.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-scrollReveal.js"></script>
-		<script type="text/javascript" src="assets/3rd/jquery/jquery-imagesloaded.js"></script>
-		<script type="text/javascript" src="assets/3rd/nivo-lightbox/nivo-lightbox.js"></script>
-		<script type="text/javascript" src="assets/js/components.js"></script>
-		<script type="text/javascript" src="assets/js/theme.js"></script>
-	</body>
-</html>
+<div id="line-content-bottom" class="bg7 line-cover line-bg-dark">
+    <div class="line-wrap line-sidebar-bottom">
+        <div class="line-column line6">
+            <aside class="widget widget_text">
+                <div class="textwidget">
+                    <p>
+                        <img src="assets/img/logo.svg" alt="img">
+                    </p>
+                    <p>
+                        <strong>Address:</strong>Milan, 20100, Italy
+                        <br>
+                        <strong>Phone:</strong>+393292936833
+                        <br>
+                        <strong>Email:</strong>imperugo@gmail.com
+                        <br>
+                    </p>
+                </div>
+            </aside>
+        </div>
+        <div class="line-column line2">
+            <aside class="widget">
+                <h3 class="line-title">Blogs</h3>
+                <ul>
+                    <li><a href="http://tostring.it">English</a>
+                    </li>
+                    <li><a href="http://imperugo.tostring.it">Italian</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <div class="line-column line2">
+            <aside class="widget">
+                <h3 class="line-title">Network</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/imperugo" target="_blank">Facebook</a>
+                    </li>
+                    <li><a href="https://twitter.com/imperugo" target="_blank">Twitter</a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/imperugo" target="_blank">Linkedin</a>
+                    </li>
+                    <li><a href="https://github.com/imperugo" target="_blank">Github</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <div class="line-column line2">
+            <aside class="widget">
+                <h3 class="line-title">Support</h3>
+                <ul>
+                    <li><a href="#">Documentation</a>
+                    </li>
+                    <li><a href="#">Support FAQ</a>
+                    </li>
+                    <li><a href="#">Help Desk</a>
+                    </li>
+                    <li><a href="#">Video</a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</div>
+<!--end line-content-bottom-->
